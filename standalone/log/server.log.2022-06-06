@@ -1,0 +1,963 @@
+2022-06-06 11:48:37,169 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2022-06-06 11:48:37,406 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2022-06-06 11:48:37,472 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.1.Final "Tweek" starting
+2022-06-06 11:48:37,480 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\repositorio\wildfly-8.2.1.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\windows\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_202\jre
+	java.io.tmpdir = C:\Users\rhuanp\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_202\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.15.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\GitExtensions\;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.15.10-hotspot\\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\rhuanp\AppData\Local\Microsoft\WindowsApps;C:\Users\rhuanp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rhuanp\AppData\Roaming\npm;C:\Users\rhuanp\AppData\Local\Yarn\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\repositorio\wildfly-8.2.1.Final
+	jboss.host.name = ak129468
+	jboss.modules.dir = C:\repositorio\wildfly-8.2.1.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = ak129468
+	jboss.qualified.host.name = ak129468
+	jboss.server.base.dir = C:\repositorio\wildfly-8.2.1.Final\standalone
+	jboss.server.config.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\configuration
+	jboss.server.data.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\data
+	jboss.server.deploy.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\data\content
+	jboss.server.log.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\log
+	jboss.server.name = ak129468
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\repositorio\wildfly-8.2.1.Final\standalone\configuration/logging.properties
+	module.path = C:\repositorio\wildfly-8.2.1.Final\modules
+	org.jboss.boot.log.file = C:\repositorio\wildfly-8.2.1.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_202\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\repositorio\wildfly-8.2.1.Final\jboss-modules.jar -mp C:\repositorio\wildfly-8.2.1.Final\modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -Djboss.home.dir=C:\repositorio\wildfly-8.2.1.Final -b 0.0.0.0
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.stderr.encoding = cp850
+	sun.stdout.encoding = cp850
+	user.country = BR
+	user.dir = C:\repositorio\wildfly-8.2.1.Final\bin
+	user.home = C:\Users\rhuanp
+	user.language = pt
+	user.name = rhuanp
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2022-06-06 11:48:37,482 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MaxPermSize=256M -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=C:\repositorio\wildfly-8.2.1.Final\standalone\log\server.log -Dlogging.configuration=file:C:\repositorio\wildfly-8.2.1.Final\standalone\configuration/logging.properties 
+2022-06-06 11:48:37,824 ERROR [org.jboss.as.server] (Controller Boot Thread) JBAS015956: Caught exception during boot: org.jboss.as.controller.persistence.ConfigurationPersistenceException: JBAS014676: Failed to parse configuration
+	at org.jboss.as.controller.persistence.XmlConfigurationPersister.load(XmlConfigurationPersister.java:112) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:331) [wildfly-server-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:259) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at java.lang.Thread.run(Thread.java:748) [rt.jar:1.8.0_202]
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[3,38]
+Message: Unexpected element '{urn:jboss:domain:3.0}server'
+	at org.jboss.staxmapper.XMLMapperImpl.processNested(XMLMapperImpl.java:108) [staxmapper-1.1.0.Final.jar:1.1.0.Final]
+	at org.jboss.staxmapper.XMLMapperImpl.parseDocument(XMLMapperImpl.java:69) [staxmapper-1.1.0.Final.jar:1.1.0.Final]
+	at org.jboss.as.controller.persistence.XmlConfigurationPersister.load(XmlConfigurationPersister.java:104) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	... 3 more
+
+2022-06-06 11:48:37,836 FATAL [org.jboss.as.server] (Controller Boot Thread) JBAS015957: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2022-06-06 11:48:37,851 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015950: WildFly 8.2.1.Final "Tweek" stopped in 10ms
+2022-06-06 11:59:12,168 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2022-06-06 11:59:12,310 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2022-06-06 11:59:12,354 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.1.Final "Tweek" starting
+2022-06-06 11:59:12,358 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\repositorio\wildfly-8.2.1.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\windows\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_202\jre
+	java.io.tmpdir = C:\Users\rhuanp\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_202\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.15.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\GitExtensions\;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.15.10-hotspot\\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\rhuanp\AppData\Local\Microsoft\WindowsApps;C:\Users\rhuanp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rhuanp\AppData\Roaming\npm;C:\Users\rhuanp\AppData\Local\Yarn\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\repositorio\wildfly-8.2.1.Final
+	jboss.host.name = ak129468
+	jboss.modules.dir = C:\repositorio\wildfly-8.2.1.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = ak129468
+	jboss.qualified.host.name = ak129468
+	jboss.server.base.dir = C:\repositorio\wildfly-8.2.1.Final\standalone
+	jboss.server.config.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\configuration
+	jboss.server.data.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\data
+	jboss.server.deploy.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\data\content
+	jboss.server.log.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\log
+	jboss.server.name = ak129468
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\repositorio\wildfly-8.2.1.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\repositorio\wildfly-8.2.1.Final\standalone\configuration/logging.properties
+	module.path = C:\repositorio\wildfly-8.2.1.Final\modules
+	org.jboss.boot.log.file = C:\repositorio\wildfly-8.2.1.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_202\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\repositorio\wildfly-8.2.1.Final\jboss-modules.jar -mp C:\repositorio\wildfly-8.2.1.Final\modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -Djboss.home.dir=C:\repositorio\wildfly-8.2.1.Final -b 0.0.0.0
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.stderr.encoding = cp850
+	sun.stdout.encoding = cp850
+	user.country = BR
+	user.dir = C:\repositorio\wildfly-8.2.1.Final\bin
+	user.home = C:\Users\rhuanp
+	user.language = pt
+	user.name = rhuanp
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2022-06-06 11:59:12,359 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MaxPermSize=256M -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=C:\repositorio\wildfly-8.2.1.Final\standalone\log\server.log -Dlogging.configuration=file:C:\repositorio\wildfly-8.2.1.Final\standalone\configuration/logging.properties 
+2022-06-06 11:59:13,172 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment vida-service.ear
+2022-06-06 11:59:13,291 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found vida-service.ear in deployment directory. To trigger deployment create a file called vida-service.ear.dodeploy
+2022-06-06 11:59:13,302 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2022-06-06 11:59:13,320 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.3.0.Final
+2022-06-06 11:59:13,328 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.3.0.Final
+2022-06-06 11:59:13,342 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2022-06-06 11:59:13,345 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2022-06-06 11:59:13,345 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2022-06-06 11:59:13,352 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2022-06-06 11:59:13,355 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2022-06-06 11:59:13,358 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2022-06-06 11:59:13,364 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-15) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2022-06-06 11:59:13,366 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013170: Current PicketBox version=4.0.21.Final
+2022-06-06 11:59:13,370 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-12) JBAS017502: Undertow 1.1.8.Final starting
+2022-06-06 11:59:13,370 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.8.Final starting
+2022-06-06 11:59:13,379 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2022-06-06 11:59:13,386 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2022-06-06 11:59:13,392 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
+2022-06-06 11:59:13,395 INFO  [org.jboss.as.naming] (MSC service thread 1-1) JBAS011802: Starting Naming Service
+2022-06-06 11:59:13,397 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-16) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2022-06-06 11:59:13,400 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010404: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.3)
+2022-06-06 11:59:13,401 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-12) JBAS010417: Started Driver service with driver-name = postgresql
+2022-06-06 11:59:13,557 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\repositorio\wildfly-8.2.1.Final/welcome-content
+2022-06-06 11:59:13,570 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\ForumIot\images\
+2022-06-06 11:59:13,591 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 4.0.7.Final
+2022-06-06 11:59:13,598 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017525: Started server default-server.
+2022-06-06 11:59:13,615 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017531: Host default-host starting
+2022-06-06 11:59:13,697 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory C:\repositorio\wildfly-8.2.1.Final\standalone\deployments
+2022-06-06 11:59:13,700 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-13) JBAS015876: Starting deployment of "vida-service.ear" (runtime-name: "vida-service.ear")
+2022-06-06 11:59:13,777 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017519: Undertow HTTP listener default listening on /0.0.0.0:8080
+2022-06-06 11:59:13,862 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-9) JBAS010400: Bound data source [java:jboss/datasources/VidaDSdev]
+2022-06-06 11:59:13,863 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2022-06-06 11:59:14,007 INFO  [org.jboss.ws.common.management] (MSC service thread 1-10) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2022-06-06 11:59:15,461 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015973: Starting subdeployment (runtime-name: "vida-service-rest-1.0.0-SNAPSHOT.war")
+2022-06-06 11:59:15,461 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015973: Starting subdeployment (runtime-name: "vida-service-ejb-1.0.0-SNAPSHOT.jar")
+2022-06-06 11:59:15,470 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry vida-service-jar-1.0.0-SNAPSHOT.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,473 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry vida-service-fitbit-1.0.0-SNAPSHOT.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,478 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jersey-client-2.25.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,481 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry javax.ws.rs-api-2.0.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,484 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jersey-common-2.25.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,485 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry javax.annotation-api-1.2.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,488 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jersey-guava-2.25.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,493 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry osgi-resource-locator-1.0.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,495 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry hk2-api-2.5.0-b32.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,496 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry hk2-utils-2.5.0-b32.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,498 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry aopalliance-repackaged-2.5.0-b32.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,499 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry javax.inject-2.5.0-b32.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,500 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry hk2-locator-2.5.0-b32.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,502 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jersey-media-json-jackson-2.25.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,503 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jersey-entity-filtering-2.25.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,511 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry commons-codec-1.10.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,513 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry correios-api-1.0.0-SNAPSHOT.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,514 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry json-20151123.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,516 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jackson-databind-2.6.3.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,517 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jackson-annotations-2.6.0.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,518 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jackson-core-2.6.3.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,519 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jackson-jaxrs-json-provider-2.4.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,523 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jackson-jaxrs-base-2.4.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,530 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jackson-module-jaxb-annotations-2.4.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,531 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry gson-2.8.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,533 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry hibernate-core-4.0.1.Final.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,534 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry commons-collections-3.2.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,536 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry antlr-2.7.7.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,543 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jboss-transaction-api_1.1_spec-1.0.0.Final.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,545 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry dom4j-1.6.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,546 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry xml-apis-1.0.b2.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,547 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry hibernate-jpa-2.0-api-1.0.1.Final.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,548 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jboss-logging-3.1.0.CR2.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,549 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry javassist-3.15.0-GA.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,550 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry hibernate-commons-annotations-4.0.1.Final.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,551 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry javax.mail-1.6.2.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,552 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry activation-1.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,557 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry commons-lang3-3.7.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,559 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jjwt-api-0.11.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,560 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jjwt-impl-0.11.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,561 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jjwt-jackson-0.11.1.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,563 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry bcprov-jdk15on-1.60.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,564 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry pdfbox-2.0.20.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,565 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry fontbox-2.0.20.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,566 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry commons-logging-1.2.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,567 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry boxable-1.5.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,573 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry slf4j-api-1.7.10.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,576 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry guava-18.0.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,576 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry commons-csv-1.2.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,577 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jsoup-1.9.2.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:15,578 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015960: Class Path entry jfreechart-1.5.0.jar in /C:/repositorio/wildfly-8.2.1.Final/standalone/deployments/vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2022-06-06 11:59:16,788 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) JBAS011401: Read persistence.xml for VidaPU
+2022-06-06 11:59:17,009 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar#VidaPU'
+2022-06-06 11:59:17,027 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 50) HHH000204: Processing PersistenceUnitInfo [
+	name: VidaPU
+	...]
+2022-06-06 11:59:17,067 INFO  [org.jboss.weld.deployer] (MSC service thread 1-16) JBAS016002: Processing weld deployment vida-service.ear
+2022-06-06 11:59:17,098 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 50) HHH000412: Hibernate Core {4.3.7.Final}
+2022-06-06 11:59:17,100 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000206: hibernate.properties not found
+2022-06-06 11:59:17,102 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000021: Bytecode provider name : javassist
+2022-06-06 11:59:17,130 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-16) HV000001: Hibernate Validator 5.1.3.Final
+2022-06-06 11:59:17,238 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016002: Processing weld deployment vida-service-rest-1.0.0-SNAPSHOT.war
+2022-06-06 11:59:17,862 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016002: Processing weld deployment vida-service-ejb-1.0.0-SNAPSHOT.jar
+2022-06-06 11:59:17,869 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named BackofficeDaoImpl in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/BackofficeDaoImpl!br.com.cpqd.gecro.dao.BackofficeDao
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/BackofficeDaoImpl!br.com.cpqd.gecro.dao.BackofficeDao
+	java:module/BackofficeDaoImpl!br.com.cpqd.gecro.dao.BackofficeDao
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/BackofficeDaoImpl
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/BackofficeDaoImpl
+	java:module/BackofficeDaoImpl
+
+2022-06-06 11:59:17,878 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named AuditoriaDaoImpl in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/AuditoriaDaoImpl!br.com.cpqd.gecro.dao.AuditoriaDao
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/AuditoriaDaoImpl!br.com.cpqd.gecro.dao.AuditoriaDao
+	java:module/AuditoriaDaoImpl!br.com.cpqd.gecro.dao.AuditoriaDao
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/AuditoriaDaoImpl
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/AuditoriaDaoImpl
+	java:module/AuditoriaDaoImpl
+
+2022-06-06 11:59:17,882 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named CadastroManagerBean in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/CadastroManagerBean!br.com.cpqd.gecro.api.CadastroManager
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/CadastroManagerBean!br.com.cpqd.gecro.api.CadastroManager
+	java:module/CadastroManagerBean!br.com.cpqd.gecro.api.CadastroManager
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/CadastroManagerBean
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/CadastroManagerBean
+	java:module/CadastroManagerBean
+
+2022-06-06 11:59:17,885 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named EntrevistaDaoImpl in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/EntrevistaDaoImpl!br.com.cpqd.gecro.dao.EntrevistaDao
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/EntrevistaDaoImpl!br.com.cpqd.gecro.dao.EntrevistaDao
+	java:module/EntrevistaDaoImpl!br.com.cpqd.gecro.dao.EntrevistaDao
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/EntrevistaDaoImpl
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/EntrevistaDaoImpl
+	java:module/EntrevistaDaoImpl
+
+2022-06-06 11:59:17,886 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named DataManagerBean in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/DataManagerBean!br.com.cpqd.gecro.api.DataManager
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/DataManagerBean!br.com.cpqd.gecro.api.DataManager
+	java:module/DataManagerBean!br.com.cpqd.gecro.api.DataManager
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/DataManagerBean
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/DataManagerBean
+	java:module/DataManagerBean
+
+2022-06-06 11:59:17,893 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named QuestionarioDaoImpl in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/QuestionarioDaoImpl!br.com.cpqd.gecro.dao.QuestionarioDao
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/QuestionarioDaoImpl!br.com.cpqd.gecro.dao.QuestionarioDao
+	java:module/QuestionarioDaoImpl!br.com.cpqd.gecro.dao.QuestionarioDao
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/QuestionarioDaoImpl
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/QuestionarioDaoImpl
+	java:module/QuestionarioDaoImpl
+
+2022-06-06 11:59:17,895 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named AuditoriaLog in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/AuditoriaLog!br.com.cpqd.gecro.auditoria.AuditoriaLog
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/AuditoriaLog!br.com.cpqd.gecro.auditoria.AuditoriaLog
+	java:module/AuditoriaLog!br.com.cpqd.gecro.auditoria.AuditoriaLog
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/AuditoriaLog
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/AuditoriaLog
+	java:module/AuditoriaLog
+
+2022-06-06 11:59:17,896 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named CalendarioJob in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/CalendarioJob!br.com.cpqd.gecro.calendario.CalendarioJob
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/CalendarioJob!br.com.cpqd.gecro.calendario.CalendarioJob
+	java:module/CalendarioJob!br.com.cpqd.gecro.calendario.CalendarioJob
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/CalendarioJob
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/CalendarioJob
+	java:module/CalendarioJob
+
+2022-06-06 11:59:17,897 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named AdminDaoImpl in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/AdminDaoImpl!br.com.cpqd.gecro.dao.AdminDao
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/AdminDaoImpl!br.com.cpqd.gecro.dao.AdminDao
+	java:module/AdminDaoImpl!br.com.cpqd.gecro.dao.AdminDao
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/AdminDaoImpl
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/AdminDaoImpl
+	java:module/AdminDaoImpl
+
+2022-06-06 11:59:17,899 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named AdminManagerBean in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/AdminManagerBean!br.com.cpqd.gecro.api.AdminManager
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/AdminManagerBean!br.com.cpqd.gecro.api.AdminManager
+	java:module/AdminManagerBean!br.com.cpqd.gecro.api.AdminManager
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/AdminManagerBean
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/AdminManagerBean
+	java:module/AdminManagerBean
+
+2022-06-06 11:59:17,901 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named BaseBean in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/BaseBean!br.com.cpqd.gecro.impl.BaseBean
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/BaseBean!br.com.cpqd.gecro.impl.BaseBean
+	java:module/BaseBean!br.com.cpqd.gecro.impl.BaseBean
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/BaseBean
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/BaseBean
+	java:module/BaseBean
+
+2022-06-06 11:59:17,908 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named BackofficeManagerBean in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/BackofficeManagerBean!br.com.cpqd.gecro.api.BackofficeManager
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/BackofficeManagerBean!br.com.cpqd.gecro.api.BackofficeManager
+	java:module/BackofficeManagerBean!br.com.cpqd.gecro.api.BackofficeManager
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/BackofficeManagerBean
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/BackofficeManagerBean
+	java:module/BackofficeManagerBean
+
+2022-06-06 11:59:17,910 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named CadastroDaoImpl in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/CadastroDaoImpl!br.com.cpqd.gecro.dao.CadastroDao
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/CadastroDaoImpl!br.com.cpqd.gecro.dao.CadastroDao
+	java:module/CadastroDaoImpl!br.com.cpqd.gecro.dao.CadastroDao
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/CadastroDaoImpl
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/CadastroDaoImpl
+	java:module/CadastroDaoImpl
+
+2022-06-06 11:59:17,911 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named EntrevistaManagerBean in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/EntrevistaManagerBean!br.com.cpqd.gecro.api.EntrevistaManager
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/EntrevistaManagerBean!br.com.cpqd.gecro.api.EntrevistaManager
+	java:module/EntrevistaManagerBean!br.com.cpqd.gecro.api.EntrevistaManager
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/EntrevistaManagerBean
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/EntrevistaManagerBean
+	java:module/EntrevistaManagerBean
+
+2022-06-06 11:59:17,913 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named FCJob in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/FCJob!br.com.cpqd.gecro.fitbit.FCJob
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/FCJob!br.com.cpqd.gecro.fitbit.FCJob
+	java:module/FCJob!br.com.cpqd.gecro.fitbit.FCJob
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/FCJob
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/FCJob
+	java:module/FCJob
+
+2022-06-06 11:59:17,915 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named ReporteJob in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/ReporteJob!br.com.cpqd.gecro.calendario.ReporteJob
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/ReporteJob!br.com.cpqd.gecro.calendario.ReporteJob
+	java:module/ReporteJob!br.com.cpqd.gecro.calendario.ReporteJob
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/ReporteJob
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/ReporteJob
+	java:module/ReporteJob
+
+2022-06-06 11:59:17,918 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named TokenManager in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/TokenManager!br.com.cpqd.gecro.auth.TokenManager
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/TokenManager!br.com.cpqd.gecro.auth.TokenManager
+	java:module/TokenManager!br.com.cpqd.gecro.auth.TokenManager
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/TokenManager
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/TokenManager
+	java:module/TokenManager
+
+2022-06-06 11:59:17,924 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named DataDaoImpl in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/DataDaoImpl!br.com.cpqd.gecro.dao.DataDao
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/DataDaoImpl!br.com.cpqd.gecro.dao.DataDao
+	java:module/DataDaoImpl!br.com.cpqd.gecro.dao.DataDao
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/DataDaoImpl
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/DataDaoImpl
+	java:module/DataDaoImpl
+
+2022-06-06 11:59:17,926 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named FitbitJob in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/FitbitJob!br.com.cpqd.gecro.fitbit.FitbitJob
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/FitbitJob!br.com.cpqd.gecro.fitbit.FitbitJob
+	java:module/FitbitJob!br.com.cpqd.gecro.fitbit.FitbitJob
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/FitbitJob
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/FitbitJob
+	java:module/FitbitJob
+
+2022-06-06 11:59:17,928 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named RelatorioManagerBean in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/RelatorioManagerBean!br.com.cpqd.gecro.api.RelatorioManager
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/RelatorioManagerBean!br.com.cpqd.gecro.api.RelatorioManager
+	java:module/RelatorioManagerBean!br.com.cpqd.gecro.api.RelatorioManager
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/RelatorioManagerBean
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/RelatorioManagerBean
+	java:module/RelatorioManagerBean
+
+2022-06-06 11:59:17,931 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named QuestionarioManagerBean in deployment unit subdeployment "vida-service-ejb-1.0.0-SNAPSHOT.jar" of deployment "vida-service.ear" are as follows:
+
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/QuestionarioManagerBean!br.com.cpqd.gecro.api.QuestionarioManager
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/QuestionarioManagerBean!br.com.cpqd.gecro.api.QuestionarioManager
+	java:module/QuestionarioManagerBean!br.com.cpqd.gecro.api.QuestionarioManager
+	java:global/vida-service/vida-service-ejb-1.0.0-SNAPSHOT/QuestionarioManagerBean
+	java:app/vida-service-ejb-1.0.0-SNAPSHOT/QuestionarioManagerBean
+	java:module/QuestionarioManagerBean
+
+2022-06-06 11:59:17,944 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) JBAS016005: Starting Services for CDI deployment: vida-service.ear
+2022-06-06 11:59:17,984 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 2.2.6 (Final)
+2022-06-06 11:59:17,997 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016008: Starting weld service for deployment vida-service.ear
+2022-06-06 11:59:18,291 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar#VidaPU'
+2022-06-06 11:59:18,377 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 50) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2022-06-06 11:59:20,521 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 50) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-06-06 11:59:20,532 INFO  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] (ServerService Thread Pool -- 50) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-06-06 11:59:20,741 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 50) HHH000397: Using ASTQueryTranslatorFactory
+2022-06-06 11:59:21,305 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000228: Running hbm2ddl schema update
+2022-06-06 11:59:21,307 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000102: Fetching database metadata
+2022-06-06 11:59:21,474 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000396: Updating schema
+2022-06-06 11:59:22,264 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.afastamento
+2022-06-06 11:59:22,274 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_afastamento, nm_afastamento]
+2022-06-06 11:59:22,276 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:22,276 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_afastamento]
+2022-06-06 11:59:22,895 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.aplicacao_fitbit
+2022-06-06 11:59:22,896 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_application, cd_client_id, cd_client_secret, ds_callback_url]
+2022-06-06 11:59:22,897 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:22,898 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_aplicacao_fitbit]
+2022-06-06 11:59:24,119 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.atendente
+2022-06-06 11:59:24,120 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_atendente, nm_logradouro, nr_telefone_fixo, nr_logradouro, nm_endereco_email, dt_cadastro, dt_nascimento, cd_uf, cd_matricula, nr_telefone_movel, ds_complemento_endereco, nm_cidade, id_atendente, nr_cep, nm_bairro]
+2022-06-06 11:59:24,122 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:24,122 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_atendente]
+2022-06-06 11:59:24,739 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.atendente_afastamento
+2022-06-06 11:59:24,740 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_afastamento, dt_desligamento, id_atendente_afastamento, dt_fim, id_enfermeiro_substituto, dt_inicio, id_atendente_funcao_cargo]
+2022-06-06 11:59:24,741 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_atendente_afastamento_3, fk_atendente_afastamento_2, fk_atendente_afastamento_1]
+2022-06-06 11:59:24,742 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_atendente_afastamento, ifk_atendente_afastamento_3, ifk_atendente_afastamento_2, ifk_atendente_afastamento_1]
+2022-06-06 11:59:25,362 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.atendente_funcao_cargo
+2022-06-06 11:59:25,364 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_funcao_cargo, in_situacao, id_atendente, dt_admissao, id_atendente_funcao_cargo]
+2022-06-06 11:59:25,367 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_atendente_funcao_cargo_1, fk_atendente_funcao_cargo_2]
+2022-06-06 11:59:25,368 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_atendente_funcao_cargo_2, uk_atendente_funcao_cargo, pk_atendente_funcao_cargo, ifk_atendente_funcao_cargo_1]
+2022-06-06 11:59:25,979 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.atendente_usuario
+2022-06-06 11:59:25,980 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_usuario, id_atendente]
+2022-06-06 11:59:25,981 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_atendente_usuario_2, fk_atendente_usuario_1]
+2022-06-06 11:59:25,982 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_atendente_usuario_2, ifk_atendente_usuario_1, pk_atendente_usuario]
+2022-06-06 11:59:26,595 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.ausencia_notificacao
+2022-06-06 11:59:26,595 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [dt_ausencia_notificacao, hr_ausencia_notificacao, id_calendario_paciente]
+2022-06-06 11:59:26,597 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_ausencia_notificacao]
+2022-06-06 11:59:26,597 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_ausencia_notificacao]
+2022-06-06 11:59:27,215 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.calendario_paciente
+2022-06-06 11:59:27,216 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_unidade_medida_medicamento, id_medicamento, id_pessoa_paciente, hr_calendario, id_parametro_saude, qt_medicamento, dt_calendario, id_calendario_paciente]
+2022-06-06 11:59:27,218 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_calendario_paciente_1, fk_calendario_paciente_2, fk_calendario_paciente, fk_calendario_paciente_3]
+2022-06-06 11:59:27,219 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_calendario_paciente, uk_calendario_paciente_, pk_calendario_paciente, ifk_calendario_paciente_1, ifk_calendario_paciente_2, ifk_calendario_paciente_3, idx_calendario_paciente]
+2022-06-06 11:59:27,830 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.classificacao_conduta
+2022-06-06 11:59:27,831 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_classificacao, id_classificacao]
+2022-06-06 11:59:27,831 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:27,832 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_classificacao_conduta, uk_classificacao_conduta]
+2022-06-06 11:59:28,451 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.comentario_plano_cuidado
+2022-06-06 11:59:28,452 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano_cuidado_paciente, id_tipo_tarefa, ds_comentario, dt_comentario, id_tarefa, id_comentario_plano_cuidado, nr_ordem_ligacao_rotina, id_enfermeiro]
+2022-06-06 11:59:28,453 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_comentario_plano_cuidado, fk_comentario_plano_cuidado_3, fk_comentario_plano_cuidado_2, fk_comentario_plano_cuidado_1]
+2022-06-06 11:59:28,454 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_comentario_plano_cuidado, pk_comentario_plano_cuidado, idx_comentario_plano_cuidado, uk_comentario_plano_cuid, ifk_comentario_plano_cuidado_2, ifk_comentario_plano_cuidado_3, ifk_comentario_plano_cuidado_1]
+2022-06-06 11:59:29,073 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.compr_diagnostico_func
+2022-06-06 11:59:29,074 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_compr_diagnostico_func_pai, ds_diagnostico, cd_resposta, in_compr_funcional, nr_subitem_pergunta, cd_operador_comprometido, vl_comprometido, id_compr_diagnostico_func, nr_pergunta, id_regra_verif_compr, cd_operador_logico]
+2022-06-06 11:59:29,075 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_compr_diagnostico_func_3, fk_compr_diagnostico_func_2, fk_compr_diagnostico_func_4, fk_compr_diagnostico_func, fk_compr_diagnostico_func_1]
+2022-06-06 11:59:29,076 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk2_compr_diagnostico_funcion, ifk6_compr_diagnostico_funcion, pk_compr_diagnostico_func, ifk1_compr_diagnostico_funcion, uk_compr_diagnostico_fun, ifk4_compr_diagnostico_funcion, ifk5_compr_diagnostico_funcion]
+2022-06-06 11:59:29,690 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.contato_medico_paciente
+2022-06-06 11:59:29,691 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_especialidade, nr_telefone, dt_inicio_tratamento, id_pessoa_paciente, id_contato_medico, dt_cadastro, nm_medico]
+2022-06-06 11:59:29,693 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_contato_medico_paciente]
+2022-06-06 11:59:29,694 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_contato_medico_paciente, uk_contato_medico_pacien, pk_contato_medico_paciente]
+2022-06-06 11:59:30,306 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.contato_pre_cadastro
+2022-06-06 11:59:30,307 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_contato, in_realizado_cadastro, nr_telefone_contato, nm_email_contato]
+2022-06-06 11:59:30,308 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:30,309 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_contato_pre_cadastro]
+2022-06-06 11:59:30,923 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.contato_urgencia
+2022-06-06 11:59:30,924 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_contato, nr_telefone, id_pessoa_paciente]
+2022-06-06 11:59:30,925 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_contato_urgencia]
+2022-06-06 11:59:30,926 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_contato_urgencia, ifk_contato_urgencia]
+2022-06-06 11:59:31,535 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.criticidade_parametro_saude
+2022-06-06 11:59:31,537 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_criticidade_parametro_saude, ds_criticidade_parametro_saude, id_criticidade_parametro_saude]
+2022-06-06 11:59:31,537 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:31,538 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_criticidade_parametro, pk_criticidade_parametro_saude]
+2022-06-06 11:59:32,158 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.cuidador_paciente
+2022-06-06 11:59:32,159 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_contato, nr_telefone, id_pessoa_paciente, in_cuidador_atual, nm_endereco_email, nr_ordem, cd_tipo_cuidador, dt_cadastro]
+2022-06-06 11:59:32,160 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_cuidador_paciente]
+2022-06-06 11:59:32,161 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_cuidador_paciente, ifk_cuidador_paciente]
+2022-06-06 11:59:32,780 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.diagnostico_cliente
+2022-06-06 11:59:32,781 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_relatorio_padrao, dt_diagnostico, id_pessoa_paciente, id_texto_relatorio_diagnostico, id_conduta, id_diagnostico_cliente, nm_email_contato]
+2022-06-06 11:59:32,784 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_diagnostico_cliente, fk_diagnostico_cliente_3, fk_diagnostico_cliente_2, fk_diagnostico_cliente_4, fk_diagnostico_cliente_1]
+2022-06-06 11:59:32,784 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_diagnostico_cliente_2, ifk_diagnostico_cliente_1, ifk_diagnostico_cliente_4, ifk_diagnostico_cliente_3, ifk3_diagnostico_cliente, pk_diagnostico_cliente, uk_diagnostico_cliente]
+2022-06-06 11:59:33,399 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.dia_semana
+2022-06-06 11:59:33,400 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_dia_semana, cd_dia_semana, nm_dia_semana]
+2022-06-06 11:59:33,401 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:33,402 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_dia_semana, uk_dia_semana]
+2022-06-06 11:59:34,021 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.especialidade_medica_paciente
+2022-06-06 11:59:34,022 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_especialidade, dt_inicio_tratamento, id_pessoa_paciente, dt_cadastro, dt_fim_tratamento]
+2022-06-06 11:59:34,024 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_especialidade_medica_paci, fk_especialidade_medica_paci_1]
+2022-06-06 11:59:34,025 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_especialidade_medica_pacien, ifk_especialidade_medica_pacie, ifk2_especialidade_medica_paci]
+2022-06-06 11:59:34,639 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.especialidade_profissional
+2022-06-06 11:59:34,640 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_especialidade, in_medico, nm_especialidade]
+2022-06-06 11:59:34,642 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:34,645 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_especialidade_profiss, pk_especialidade_profissional]
+2022-06-06 11:59:35,255 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.faixa_frequencia_cardiaca
+2022-06-06 11:59:35,256 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [cd_faixa, nm_faixa]
+2022-06-06 11:59:35,257 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:35,258 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_faixa_frequencia_cardiaca]
+2022-06-06 11:59:35,876 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.faixa_usuario_fitbit
+2022-06-06 11:59:35,877 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [cd_faixa, vl_inicial_faixa, vl_final_faixa, cd_user_id]
+2022-06-06 11:59:35,878 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_faixa_usuario_fitbit, fk_faixa_usuario_fitbit_2]
+2022-06-06 11:59:35,879 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_faixa_usuario_fitbit_2, ifk_faixa_usuario_fitbit_1, pk_faixa_usuario_fitbit]
+2022-06-06 11:59:36,490 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.frequencia_ingestao
+2022-06-06 11:59:36,491 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_frequencia_ingestao, nm_frequencia_ingestao]
+2022-06-06 11:59:36,492 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:36,493 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_frequencia_ingestao, uk_frequencia_ingestao]
+2022-06-06 11:59:37,107 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.frequencia_ingestao_dia_semana
+2022-06-06 11:59:37,109 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano_cuidado_paciente, id_dia_semana, id_medicamento, dt_inicio_validade, dt_inicio_tratamento, dt_fim_validade]
+2022-06-06 11:59:37,110 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_frequencia_ingestao_dia_sem, fk_frequencia_ingestao_dia_s_1]
+2022-06-06 11:59:37,111 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_frequencia_ingestao_dia_s1, pk_frequencia_ingestao_dia_sem, ifk_frequencia_ingestao_dia_se]
+2022-06-06 11:59:37,719 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.funcao_cargo
+2022-06-06 11:59:37,720 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_funcao_cargo, id_funcao_cargo]
+2022-06-06 11:59:37,721 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:37,722 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_funcao_cargo]
+2022-06-06 11:59:38,338 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.funcao_diagnostico
+2022-06-06 11:59:38,339 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_funcao, id_funcao]
+2022-06-06 11:59:38,340 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:38,341 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_funcao_diagnostico, pk_funcao_diagnostico]
+2022-06-06 11:59:38,950 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.grupo_pergunta
+2022-06-06 11:59:38,951 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [in_apresenta_simplificado, nr_grupo_pergunta, in_grupo_pergunta_habilitada, nm_grupo_pergunta, id_grupo_pergunta]
+2022-06-06 11:59:38,952 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:38,953 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_grupo_pergunta, uk_grupo_pergunta_]
+2022-06-06 11:59:39,588 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.horario_medicamento
+2022-06-06 11:59:39,589 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano_cuidado_paciente, id_medicamento, dt_inicio_validade, dt_inicio_tratamento, dt_fim_validade, hr_medicamento]
+2022-06-06 11:59:39,589 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_horario_medicamento]
+2022-06-06 11:59:39,590 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk3_horario_medicamento, uk_horario_medicamento, pk_horario_medicamento]
+2022-06-06 11:59:40,206 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.horario_medicao
+2022-06-06 11:59:40,207 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano_cuidado_paciente, id_parametro_saude, hr_medicao, id_horario_medicao]
+2022-06-06 11:59:40,208 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_horario_medicao]
+2022-06-06 11:59:40,210 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_horario_medicao, uk_horario_medicao, ifk_horario_medicao]
+2022-06-06 11:59:40,834 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.insumo_regra_verif_texto
+2022-06-06 11:59:40,835 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_texto_relatorio_diagnostico, id_regra_verif_texto]
+2022-06-06 11:59:40,836 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_insumo_regra_verif_texto, fk_insumo_regra_verif_texto_1]
+2022-06-06 11:59:40,837 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_insumo_regra_verif_texto, ifk_insumo_regra_verif_texto, ifk_insumo_regra_verif_texto_1]
+2022-06-06 11:59:41,459 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.log_auditoria
+2022-06-06 11:59:41,460 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [in_origem_executor, id_log_auditoria, nm_assunto, ds_requisicao, id_usuario_executor, nm_servico, id_paciente_fim, id_atendente_fim, cd_operacao, dt_log_auditoria, ds_resposta]
+2022-06-06 11:59:41,461 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_log_auditoria_2, fk_log_auditoria_1, fk_log_auditoria]
+2022-06-06 11:59:41,462 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_log_auditoria]
+2022-06-06 11:59:42,071 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.medicamento
+2022-06-06 11:59:42,073 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_forma_farmaceutica, id_medicamento, nm_medicamento_comercial, nm_principio_ativo, in_generico, nm_classe_farmacologica, nm_grupo_farmacologico, nm_unidade_fracionamento]
+2022-06-06 11:59:42,074 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:42,075 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_medicamento, pk_medicamento]
+2022-06-06 11:59:42,691 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.medicao_dia_semana
+2022-06-06 11:59:42,692 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano_cuidado_paciente, id_dia_semana, id_medicao_dia_semana, id_parametro_saude]
+2022-06-06 11:59:42,694 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_medicao_dia_semana_1, fk_medicao_dia_semana]
+2022-06-06 11:59:42,695 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_medicao_dia_semana, pk_medicao_dia_semana, uk_medicao_dia_semana, ifk_medicao_dia_semana_1]
+2022-06-06 11:59:43,314 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.medicao_frequencia_cardiaca
+2022-06-06 11:59:43,315 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_medicao_frequencia_cardiaca, id_medicao_paciente, hr_inicio, vl_minimo, dt_fim, vl_maximo, dt_inicio, id_paciente, dt_registro, hr_fim, vl_medio]
+2022-06-06 11:59:43,316 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_paciente, fk_medicao_paciente]
+2022-06-06 11:59:43,316 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_medicao_frequencia_cardiaca, idx_dt_registro_medicao_frequencia_cardiaca, pk_medicao_frequencia_cardiaca, ifk_paciente_medicao_frequencia_cardiaca]
+2022-06-06 11:59:43,947 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.medicao_paciente
+2022-06-06 11:59:43,947 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [hr_inicio_periodo_sono, cd_manual_automatico, id_pessoa_paciente, hr_acordada, mn_terceira_faixa, id_calendario_paciente, hr_medicao, hr_sono_restless, mn_primeira_faixa, vl_medicao, dt_medicao, nr_frequencia_repouso, vl_minimo_medicao, id_medicao_paciente, id_usuario, hr_sono_rem, dt_inicio_periodo_sono, vl_maximo_medicao, hr_sono_profundo, hr_sono_asleep, mn_quarta_faixa, in_botao_panico, hr_sono_leve, mn_segunda_faixa]
+2022-06-06 11:59:43,949 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_medicao_paciente_2, fk_medicao_paciente_1, fk_medicao_paciente]
+2022-06-06 11:59:43,950 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_medicao_paciente_2, ifk_medicao_paciente_3, uk_medicao_paciente, idx_medicao_paciente, pk_medicao_paciente, ifk_medicao_paciente]
+2022-06-06 11:59:44,563 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.morbidade
+2022-06-06 11:59:44,563 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_morbidade, in_pre_cadastro, nm_morbidade]
+2022-06-06 11:59:44,564 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:44,565 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_morbidade, pk_morbidade]
+2022-06-06 11:59:45,184 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.morbidade_paciente
+2022-06-06 11:59:45,184 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_morbidade, id_pessoa_paciente, nm_morbidade_outro, dt_cadastro]
+2022-06-06 11:59:45,185 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_morbidade_paciente_1, fk_morbidade_paciente]
+2022-06-06 11:59:45,186 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk2_morbidade_paciente, ifk1_morbidade_paciente, pk_morbidade_paciente]
+2022-06-06 11:59:45,803 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.paciente
+2022-06-06 11:59:45,804 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_pessoa_visitante, im_paciente, in_paciente_realizou_cadastro, id_pessoa_paciente, ds_checksum_foto, in_familiaridade_tecnologia, ds_nome_arquivo_foto, cd_device_dojot, dt_cadastro, dt_nascimento, cd_sexo_paciente, id_pessoa_juridica_convenio]
+2022-06-06 11:59:45,806 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_paciente, fk_paciente_2, fk_paciente_1]
+2022-06-06 11:59:45,807 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_paciente, pk_paciente, ifk2_paciente]
+2022-06-06 11:59:46,423 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.paciente_historico
+2022-06-06 11:59:46,424 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano, in_etilismo, in_fumante, id_pessoa_paciente, nr_peso, vl_media_pressao_maxima, vl_media_pressao_minima, in_wearable, dt_inicio_validade, vl_media_glicemia, dt_fim_validade, id_tipo_status_paciente, nr_altura, vl_media_oximetria, in_mora_sozinho]
+2022-06-06 11:59:46,425 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_paciente_historico_3, fk_paciente_historico, fk_paciente_historico_2]
+2022-06-06 11:59:46,426 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_paciente_historico, ifk_paciente_historico_2, ifk_paciente_historico_3, pk_paciente_historico]
+2022-06-06 11:59:47,039 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.paciente_monitoramento
+2022-06-06 11:59:47,040 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [dt_operacao, id_plano, dt_inicio_validade, ds_motivo, id_pessoa_paciente, id_paciente_monitoramento, id_tipo_operacao]
+2022-06-06 11:59:47,041 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_paciente_monitoramento_3, fk_paciente_monitoramento_1, fk_paciente_monitoramento_2]
+2022-06-06 11:59:47,042 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_paciente_monitoramento_2, ifk_paciente_monitoramento_3, pk_paciente_monitoramento, ifk_paciente_monitoramento_1]
+2022-06-06 11:59:47,655 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.parametro_saude
+2022-06-06 11:59:47,656 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [cd_unidade_medida, id_parametro_saude, nm_parametro_saude, in_wearable]
+2022-06-06 11:59:47,657 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:47,658 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_parametro_saude, uk_parametro_saude]
+2022-06-06 11:59:48,275 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.parametro_saude_vl_padrao
+2022-06-06 11:59:48,276 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [vl_padrao_final, cd_operador, id_subparametro_saude, id_parametro_saude_vl_padrao, id_criticidade_parametro_saude, id_parametro_saude, vl_padrao_inicial, ds_parametro_saude_padrao]
+2022-06-06 11:59:48,277 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_parametro_saude_vl_padrao_1, fk_parametro_saude_vl_padrao_2, fk_parametro_saude_vl_padrao]
+2022-06-06 11:59:48,278 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_parametro_saude_vl_padra_2, ifk_parametro_saude_vl_padrao, uk_parametro_saude_vl_padrao, ifk_parametro_saude_vl_padra_1, pk_parametro_saude_vl_padrao]
+2022-06-06 11:59:48,891 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.perfil_usuario
+2022-06-06 11:59:48,892 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_perfil_usuario, nm_perfil_usuario]
+2022-06-06 11:59:48,893 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:48,894 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_perfil_usuario, uk_perfil_usuario]
+2022-06-06 11:59:49,515 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.pergunta
+2022-06-06 11:59:49,516 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_pergunta_outra_pessoa, in_apresenta_simplificado, in_pergunta_habilitada, nm_pergunta_proprio_idoso, in_resposta_valida, id_texto_fixo, in_ciclo_3, nr_pergunta, in_ciclo_1, cd_restricao_apresentacao, in_ciclo_2, id_grupo_pergunta, in_subitem_selecao_multipla, in_questionario_completo, in_subitem_selecao_exclusiva]
+2022-06-06 11:59:49,520 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_pergunta, fk_pergunta_1]
+2022-06-06 11:59:49,521 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_pergunta, ifk_pergunta_1, pk_pergunta]
+2022-06-06 11:59:50,139 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.pergunta_resposta_valida
+2022-06-06 11:59:50,140 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [cd_resposta, in_apresenta_resposta_valida, nr_subitem_pergunta, nr_pergunta, in_criticidade]
+2022-06-06 11:59:50,140 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_pergunta_resposta_valida, fk_pergunta_resposta_valida_1, fk_pergunta_resposta_valida_2]
+2022-06-06 11:59:50,141 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk2_pergunta_resposta_valida, pk_pergunta_resposta_valida, uk_pergunta_resposta_valida, ifk1_pergunta_resposta_valida, ifk3_pergunta_resposta_valida]
+2022-06-06 11:59:50,750 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.pessoa
+2022-06-06 11:59:50,752 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nr_cpf_cnpj, nm_logradouro, nr_telefone_fixo, nr_logradouro, nm_endereco_email, dt_cadastro, cd_uf, id_pessoa, nr_telefone_movel, cd_pessoa_fisica_juridica, ds_complemento_endereco, nm_cidade, nr_cep, nm_pessoa, nm_bairro]
+2022-06-06 11:59:50,753 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:50,754 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_pessoa, pk_pessoa]
+2022-06-06 11:59:51,429 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.plano
+2022-06-06 11:59:51,430 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano, nm_plano, in_tablet, ds_plano, in_wearable]
+2022-06-06 11:59:51,431 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:51,432 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_plano]
+2022-06-06 11:59:52,077 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.plano_cuidado_medicamento
+2022-06-06 11:59:52,078 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano_cuidado_paciente, id_medicamento, dt_inicio_tratamento, nm_medicamento_notificacao, dt_cadastro]
+2022-06-06 11:59:52,079 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_plano_cuidado_medicamento_4, fk_plano_cuidado_medicamento]
+2022-06-06 11:59:52,080 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_plano_cuidado_medicamento_4, ifk_plano_cuidado_medicamento, pk_plano_cuidado_medicamento]
+2022-06-06 11:59:52,716 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.plano_cuidado_medicamento_hist
+2022-06-06 11:59:52,717 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_unidade_medida_medicamento, id_frequencia_ingestao, id_plano_cuidado_paciente, id_medicamento, dt_inicio_validade, dt_inicio_tratamento, dt_fim_validade, nr_dia_ingestao, id_recomendacao_ingestao, qt_medicamento, dt_fim_tratamento, ds_recomendacao_personalizada]
+2022-06-06 11:59:52,719 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_plano_cuidado_medic_hist, fk_plano_cuidado_medic_hist_3, fk_plano_cuidado_medic_hist_1, fk_plano_cuidado_medic_hist_2]
+2022-06-06 11:59:52,720 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_plano_cuidado_medic_hist_2, ifk_plano_cuidado_medic_hist_3, pk_plano_cuidado_medicamento_h, ifk_plano_cuidado_medic_hist, ifk_plano_cuidado_medic_hist_1]
+2022-06-06 11:59:53,347 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.plano_cuidado_medicao
+2022-06-06 11:59:53,348 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano_cuidado_paciente, cd_periodicidade_medicao, qt_medicao_diaria, id_parametro_saude, nr_segundo_dia_mes, dt_ultima_atualizacao, nr_dia_mes]
+2022-06-06 11:59:53,350 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_plano_cuidado_medicao_1, fk_plano_cuidado_medicao]
+2022-06-06 11:59:53,351 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_plano_cuidado_medicao, ifk_plano_cuidado_medicao, ifk_plano_cuidado_medicao_1]
+2022-06-06 11:59:53,977 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.plano_cuidado_paciente
+2022-06-06 11:59:53,978 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_plano_cuidado_paciente, cd_periodicidade_contato, id_pessoa_paciente, dt_fim_monitoramento, in_contato_paciente, id_enfermeiro_substituto, nr_segundo_dia_mes, dt_ultima_atualizacao, nr_dia_mes, cd_dia_semana, in_contato_cuidador, dt_cadastro, dt_inicio_monitoramento, qt_contato, hr_contato_preferido, id_enfermeiro_responsavel]
+2022-06-06 11:59:53,981 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_plano_cuidado_paciente, fk_plano_cuidado_paciente_1, fk_plano_cuidado_paciente_2]
+2022-06-06 11:59:53,982 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_plano_cuidado_paciente, ifk_plano_cuidado_paciente, ifk_plano_cuidado_paciente_1, ifk_plano_cuidado_paciente_2, uk_plano_cuidado_paciente]
+2022-06-06 11:59:54,598 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.plano_cuidado_parametro_saude
+2022-06-06 11:59:54,600 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [vl_referencia_final, id_plano_cuidado_paciente, id_parametro_saude_vl_padrao, dt_ultima_atualizacao, in_vl_padrao, vl_referencia_inicial]
+2022-06-06 11:59:54,600 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_plano_cuidado_parametro_s_1, fk_plano_cuidado_parametro_sau]
+2022-06-06 11:59:54,602 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_plano_cuidado_parametro_sau, ifk_plano_cuidado_parametro_s1, ifk_plano_cuidado_parametro_sa]
+2022-06-06 11:59:55,215 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.pre_cadastro
+2022-06-06 11:59:55,216 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [dt_pre_cadastro, id_plano, nr_idade_idoso, ds_checksum_foto, id_pre_cadastro, nm_idoso, nm_email_contato, nm_contato, im_paciente, in_paciente_realizou_cadastro, ds_nome_arquivo_foto, in_mora_sozinho, cd_grau_parentesco]
+2022-06-06 11:59:55,217 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_pre_cadastro_2, fk_pre_cadastro]
+2022-06-06 11:59:55,218 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_pre_cadastro, ifk_pre_cadastro_2, uk_pre_cadastro, pk_pre_cadastro]
+2022-06-06 11:59:55,827 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.propriedade
+2022-06-06 11:59:55,828 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [vl_propriedade, id_propriedade, nm_propriedade]
+2022-06-06 11:59:55,829 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:55,829 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_propriedade, pk_propriedade]
+2022-06-06 11:59:56,443 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.questionario
+2022-06-06 11:59:56,444 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_questionario, dt_inicio_validade, id_questionario, cd_tipo_questionario, nr_versao_questionario, dt_fim_validade, dt_cadastro]
+2022-06-06 11:59:56,445 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:56,445 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_questionario, uk_questionario]
+2022-06-06 11:59:57,059 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.questionario_pergunta
+2022-06-06 11:59:57,060 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_questionario, nr_pergunta, nr_ordem_pergunta, nr_ordem_grupo_pergunta]
+2022-06-06 11:59:57,061 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_questionario_pergunta, fk_questionario_pergunta_1]
+2022-06-06 11:59:57,062 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk2_questionario_pergunta, ifk1_questionario_pergunta, pk_questionario_pergunta]
+2022-06-06 11:59:57,674 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.recomendacao_ingestao
+2022-06-06 11:59:57,675 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_recomendacao_ingestao, nm_recomendacao_ingestao]
+2022-06-06 11:59:57,676 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 11:59:57,677 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_recomendacao_ingestao, pk_recomendacao_ingestao]
+2022-06-06 11:59:58,286 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.regra_urgencia
+2022-06-06 11:59:58,287 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_regra_urgencia, id_parametro_saude_vl_padrao, in_verifica_vl, vl_tolerancia, id_tipo_urgencia]
+2022-06-06 11:59:58,288 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_regra_urgencia_1, fk_regra_urgencia]
+2022-06-06 11:59:58,290 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_regra_urgencia, pk_regra_urgencia, ifk_regra_urgencia, ifk3_regra_urgencia]
+2022-06-06 11:59:58,972 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.regra_verif_compr
+2022-06-06 11:59:58,973 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_subclassificacao, in_compr_funcional, cd_outro_insumo_verif, in_verif_contagem, in_verif_combinacao_logica, nm_tabela, id_grupo_pergunta, cd_operador_logico, cd_tipo_questionario, ds_calculo_regra, cd_pergunta_subitem_pergunta, nm_regra, in_verif_intervalo, id_regra_verif_compr, in_verif_unico_vl, in_verif_qt, in_criticidade, id_subfuncao, nm_coluna]
+2022-06-06 11:59:58,977 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_regra_verif_compr_3, fk_regra_verif_compr_2, fk_regra_verif_compr_1]
+2022-06-06 11:59:58,978 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_regra_verif_compr2, uk_regra_verif_compr, pk_regra_verif_compr, ifk_regra_verif_compr, ifk_regra_verif_compr_1]
+2022-06-06 11:59:59,590 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.regra_verif_texto
+2022-06-06 11:59:59,592 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [qt_minima_compr, id_regra_verif_texto, id_texto_relatorio_padrao, in_verif_combinacao_logica, qt_maxima_compr, cd_operador_logico]
+2022-06-06 11:59:59,594 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_regra_verif_texto]
+2022-06-06 11:59:59,595 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_regra_verif_texto, pk_regra_verif_texto, uk_regra_verif_texto]
+2022-06-06 12:00:00,207 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.relatorio_paciente
+2022-06-06 12:00:00,208 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [cd_automatico_manual, dt_envio, ds_email_enviado, dt_final, dt_geracao, id_usuario, id_pessoa_paciente, dt_inicio, id_relatorio_paciente, in_sucesso_falha]
+2022-06-06 12:00:00,209 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_relatorio_paciente_2, fk_relatorio_paciente_1]
+2022-06-06 12:00:00,210 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk1_relatorio_paciente, pk_relatorio_paciente, ifk2_relatorio_paciente]
+2022-06-06 12:00:00,823 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.relatorio_padrao
+2022-06-06 12:00:00,824 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_relatorio, id_relatorio_padrao, cd_compr, ds_conteudo, in_compr, ds_url_im, cd_tipo_relatorio]
+2022-06-06 12:00:00,825 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 12:00:00,826 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_relatorio_padrao, uk_relatorio_padrao_]
+2022-06-06 12:00:01,439 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.responsavel_paciente
+2022-06-06 12:00:01,440 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [in_responsavel_atual, id_pessoa_paciente, dt_cadastro, cd_grau_parentesco, id_pessoa_responsavel_paciente]
+2022-06-06 12:00:01,441 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_responsavel_paciente_1, fk_responsavel_paciente]
+2022-06-06 12:00:01,442 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_responsavel_paciente, ifk2_responsavel_paciente, ifk3_responsavel_paciente]
+2022-06-06 12:00:02,071 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.resposta_questionario_cliente
+2022-06-06 12:00:02,072 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [cd_resposta, id_questionario, id_pessoa_paciente, nr_subitem_pergunta, ds_grau_parentesco_cancer, vl_resposta, dt_resposta, id_resposta_questionario, nr_pergunta, nm_email_contato, ds_alteracao_ultimo_exame, dt_ultimo_exame_controle]
+2022-06-06 12:00:02,074 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_resposta_questionario_cli_3, fk_resposta_questionario_cli_4, fk_resposta_questionario_cli_1, fk_resposta_questionario_cli_2, fk_resposta_questionario_clien, fk_resposta_questionario_cli_5]
+2022-06-06 12:00:02,076 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_resposta_questionario_clien, ifk3_resposta_questionario_cli, ifk4_resposta_questionario_cli, ifk9_resposta_questionario_cli, uk_resposta_questionario_clien, idx_resposta_questionario, ifk5_resposta_questionario_cli, ifk7_resposta_questionario_cli, ifk8_resposta_questionario_cli]
+2022-06-06 12:00:02,690 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.resposta_valida
+2022-06-06 12:00:02,692 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [cd_resposta, nm_resposta]
+2022-06-06 12:00:02,694 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 12:00:02,695 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_resposta_valida, uk_resposta_valida_]
+2022-06-06 12:00:03,310 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.status_tarefa
+2022-06-06 12:00:03,311 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [dt_status, hr_status, id_tarefa, id_tipo_status_tarefa]
+2022-06-06 12:00:03,312 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_status_tarefa, fk_status_tarefa_1]
+2022-06-06 12:00:03,312 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [idx_status_tarefa, ifk_status_tarefa, ifk_status_tarefa_1, pk_status_tarefa]
+2022-06-06 12:00:03,922 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.subclassificacao_conduta
+2022-06-06 12:00:03,923 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_subclassificacao, id_classificacao, nm_subclassificacao]
+2022-06-06 12:00:03,924 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_subclassificacao_conduta]
+2022-06-06 12:00:03,925 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_subclassificacao_conduta, pk_subclassificacao_conduta, uk_subclassificacao_conduta]
+2022-06-06 12:00:04,535 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.subfuncao_diagnostico
+2022-06-06 12:00:04,536 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_subfuncao, id_subfuncao, id_funcao]
+2022-06-06 12:00:04,537 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_subfuncao_diagnostico]
+2022-06-06 12:00:04,540 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_subfuncao_diagnostico, ifk_subfuncao_diagnostico, pk_subfuncao_diagnostico]
+2022-06-06 12:00:05,259 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.subitem_pergunta
+2022-06-06 12:00:05,260 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_subitem_pergunta_proprio_id, nr_subitem_pergunta, id_texto_fixo, nr_pergunta, nm_subitem_pergunta_outra_pess]
+2022-06-06 12:00:05,260 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_subitem_pergunta_1, fk_subitem_pergunta]
+2022-06-06 12:00:05,261 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_subitem_pergunta, uk_subitem_pergunta, ifk_subitem_pergunta, ifk_subitem_pergunta_1]
+2022-06-06 12:00:05,879 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.subparametro_saude
+2022-06-06 12:00:05,880 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_subparametro_saude, id_subparametro_saude, id_parametro_saude]
+2022-06-06 12:00:05,881 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_subparametro_saude]
+2022-06-06 12:00:05,882 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_subparametro_saude, uk_subparametro_saude, pk_subparametro_saude]
+2022-06-06 12:00:06,502 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.tarefa
+2022-06-06 12:00:06,503 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [dt_prevista_fim, id_pessoa_paciente, cd_criticidade, dt_fim, id_enfermeiro_substituto, id_tarefa, dt_inicio, id_contato_pre_cadastro, dt_criacao, hr_inicio, id_tipo_tarefa, ds_motivo_cancelamento, nr_ordem_ligacao_rotina, hr_fim, id_enfermeiro_responsavel]
+2022-06-06 12:00:06,506 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_tarefa_1, fk_tarefa, fk_tarefa_4, fk_tarefa_3, fk_tarefa_2]
+2022-06-06 12:00:06,508 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_tarefa_2, ifk_tarefa_1, pk_tarefa, ifk_tarefa, uk_tarefa, idx_tarefa, ifk_tarefa_4, ifk_tarefa_3]
+2022-06-06 12:00:07,134 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.tarefa_ausencia_notificacao
+2022-06-06 12:00:07,136 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_tarefa, id_calendario_paciente]
+2022-06-06 12:00:07,136 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_tarefa_ausencia_notificacao, fk_tarefa_ausencia_notificac_2]
+2022-06-06 12:00:07,138 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_tarefa_ausencia_notifica_2, pk_tarefa_ausencia_notificacao, ifk_tarefa_ausencia_notificaca]
+2022-06-06 12:00:07,763 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.tarefa_urgencia_medica
+2022-06-06 12:00:07,764 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_medicao_paciente, id_tarefa]
+2022-06-06 12:00:07,764 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_tarefa_urgencia_medica, fk_tarefa_urgencia_medica_2]
+2022-06-06 12:00:07,765 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_tarefa_urgencia_medica, ifk_tarefa_urgencia_medica_2, pk_tarefa_urgencia_medica]
+2022-06-06 12:00:08,475 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.texto
+2022-06-06 12:00:08,476 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [ds_texto, nm_texto, cd_texto, ds_url_im, id_texto, in_substituicao, cd_singular_plural, ds_texto_alternativo]
+2022-06-06 12:00:08,477 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 12:00:08,477 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_texto, uk_texto_1, uk_texto_2]
+2022-06-06 12:00:09,132 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.texto_relatorio_diagnostico
+2022-06-06 12:00:09,133 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_texto_relatorio_diagnostico, id_texto, id_compr_diagnostico_func]
+2022-06-06 12:00:09,134 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_texto_relatorio_diagnostico, fk_texto_relatorio_diagnosti_1]
+2022-06-06 12:00:09,135 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_texto_relatorio_diagnost_1, uk_texto_relatorio_diagn, ifk_texto_relatorio_diagnostic, pk_texto_relatorio_diagnostico]
+2022-06-06 12:00:09,819 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.texto_relatorio_padrao
+2022-06-06 12:00:09,820 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_relatorio_padrao, in_regra_verif, in_texto_item, nr_ordem_texto, id_texto_relatorio_diagnostico, id_texto, id_texto_relatorio_padrao, nr_ordem_paragrafo]
+2022-06-06 12:00:09,822 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_texto_relatorio_padrao_1, fk_texto_relatorio_padrao_2, fk_texto_relatorio_padrao]
+2022-06-06 12:00:09,823 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_texto_relatorio_padrao_2, pk_texto_relatorio_padrao, ifk_texto_relatorio_padrao, ifk_texto_relatorio_padrao_1, uk_texto_relatorio_padrao]
+2022-06-06 12:00:10,507 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.tipo_operacao
+2022-06-06 12:00:10,508 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_tipo_operacao, id_tipo_operacao]
+2022-06-06 12:00:10,509 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 12:00:10,510 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_tipo_operacao]
+2022-06-06 12:00:11,142 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.tipo_status_paciente
+2022-06-06 12:00:11,143 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_tipo_status_paciente, nm_tipo_status_paciente]
+2022-06-06 12:00:11,144 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 12:00:11,145 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_tipo_status_paciente, uk_tipo_status_paciente]
+2022-06-06 12:00:11,820 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.tipo_status_tarefa
+2022-06-06 12:00:11,821 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_tipo_status_tarefa, id_tipo_status_tarefa]
+2022-06-06 12:00:11,822 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 12:00:11,823 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_tipo_status_tarefa, pk_tipo_status_tarefa]
+2022-06-06 12:00:12,447 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.tipo_tarefa
+2022-06-06 12:00:12,448 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_tipo_tarefa, id_tipo_tarefa]
+2022-06-06 12:00:12,449 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 12:00:12,450 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_tipo_tarefa, pk_tipo_tarefa]
+2022-06-06 12:00:13,070 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.tipo_urgencia
+2022-06-06 12:00:13,072 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_tipo_urgencia, id_tipo_urgencia]
+2022-06-06 12:00:13,073 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 12:00:13,074 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [uk_tipo_urgencia, pk_tipo_urgencia]
+2022-06-06 12:00:13,683 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.unidade_medida_medicamento
+2022-06-06 12:00:13,684 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_unidade_medida_medicamento, nm_unidade_medida_medicamento]
+2022-06-06 12:00:13,684 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+2022-06-06 12:00:13,685 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_unidade_medida_medicamento, uk_unidade_medida_medica]
+2022-06-06 12:00:14,306 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.urgencia_medica
+2022-06-06 12:00:14,308 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_regra_urgencia, id_medicao_paciente, hr_urgencia, dt_urgencia]
+2022-06-06 12:00:14,309 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_urgencia_medica, fk_urgencia_medica_1]
+2022-06-06 12:00:14,310 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_urgencia_medica, ifk_urgencia_medica]
+2022-06-06 12:00:14,923 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.usuario
+2022-06-06 12:00:14,923 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [in_enfermeiro_padrao, id_usuario, id_perfil_usuario, ds_senha, nm_usuario]
+2022-06-06 12:00:14,925 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_usuario]
+2022-06-06 12:00:14,925 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_usuario, pk_usuario, uk_usuario]
+2022-06-06 12:00:15,547 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.usuario_cuidador_paciente
+2022-06-06 12:00:15,548 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [nm_contato, id_usuario, id_pessoa_paciente]
+2022-06-06 12:00:15,549 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_usuario_cuidador_paciente, fk_usuario_cuidador_paciente_2]
+2022-06-06 12:00:15,549 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_usuario_cuidador_paciente, ifk_usuario_cuidador_pacient_2, ifk_usuario_cuidador_paciente]
+2022-06-06 12:00:16,174 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.usuario_fitbit
+2022-06-06 12:00:16,176 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [ds_permission, cd_access_token, cd_refresh_token, id_pessoa_paciente, cd_expiration_date, cd_user_id]
+2022-06-06 12:00:16,176 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_usuario_fitbit]
+2022-06-06 12:00:16,176 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_usuario_fitbit, pk_usuario_fitbit]
+2022-06-06 12:00:16,794 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.usuario_paciente
+2022-06-06 12:00:16,795 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_usuario, id_pessoa_paciente]
+2022-06-06 12:00:16,796 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_usuario_paciente_2, fk_usuario_paciente]
+2022-06-06 12:00:16,797 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_usuario_paciente, pk_usuario_paciente, ifk_usuario_paciente_2]
+2022-06-06 12:00:17,415 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.usuario_responsavel_paciente
+2022-06-06 12:00:17,416 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_usuario, id_pessoa_paciente, id_pessoa_responsavel_paciente]
+2022-06-06 12:00:17,417 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_usuario_responsavel_pacient, fk_usuario_responsavel_pacie_2]
+2022-06-06 12:00:17,417 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [ifk_usuario_responsavel_paci_2, pk_usuario_responsavel_pacient, ifk_usuario_responsavel_pacien]
+2022-06-06 12:00:18,047 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.visitante
+2022-06-06 12:00:18,048 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_pessoa_visitante, nm_email_contato]
+2022-06-06 12:00:18,049 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_visitante_1, fk_visitante]
+2022-06-06 12:00:18,050 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_visitante, ifk_visitante, uk_visitante]
+2022-06-06 12:00:18,671 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: vida_demo_sch.visitante_morbidade
+2022-06-06 12:00:18,672 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [id_morbidade, id_pre_cadastro, nm_morbidade_outro]
+2022-06-06 12:00:18,673 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_visitante_morbidade, fk_visitante_morbidade_1]
+2022-06-06 12:00:18,674 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [pk_visitante_morbidade, ifk2_visitante_morbidade, ifk_visitante_morbidade]
+2022-06-06 12:00:18,833 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000388: Unsuccessful: alter table HORARIO_MEDICAO add constraint FK_m016r0k5eu1uql2qkk6j44nkf foreign key (id_parametro_saude) references PARAMETRO_SAUDE
+2022-06-06 12:00:18,835 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) ERROR: must be owner of table horario_medicao
+2022-06-06 12:00:18,986 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000388: Unsuccessful: alter table HORARIO_MEDICAO add constraint FK_3wja383ovb3glxtdrgxw5t2so foreign key (id_plano_cuidado_paciente) references PLANO_CUIDADO_PACIENTE
+2022-06-06 12:00:18,988 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) ERROR: must be owner of table horario_medicao
+2022-06-06 12:00:19,137 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000388: Unsuccessful: alter table MEDICAO_DIA_SEMANA add constraint FK_d35kg6r0f49is389hgh1ksmlu foreign key (id_parametro_saude) references PARAMETRO_SAUDE
+2022-06-06 12:00:19,138 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) ERROR: must be owner of table medicao_dia_semana
+2022-06-06 12:00:19,289 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000388: Unsuccessful: alter table MEDICAO_DIA_SEMANA add constraint FK_otgvj3lakfkj8cwb2ilfrhnro foreign key (id_plano_cuidado_paciente) references PLANO_CUIDADO_PACIENTE
+2022-06-06 12:00:19,291 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) ERROR: must be owner of table medicao_dia_semana
+2022-06-06 12:00:19,441 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000388: Unsuccessful: alter table TAREFA_AUSENCIA_NOTIFICACAO add constraint FK_3s4gqfvw3fqb0j30a9q94e148 foreign key (id_calendario_paciente) references CALENDARIO_PACIENTE
+2022-06-06 12:00:19,442 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) ERROR: must be owner of table tarefa_ausencia_notificacao
+2022-06-06 12:00:19,592 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000388: Unsuccessful: alter table TAREFA_URGENCIA_MEDICA add constraint FK_najpvrvtwl01q3go52jy7d7xl foreign key (id_medicao_paciente) references MEDICAO_PACIENTE
+2022-06-06 12:00:19,595 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) ERROR: must be owner of table tarefa_urgencia_medica
+2022-06-06 12:00:19,595 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000232: Schema update complete
+2022-06-06 12:00:20,453 INFO  [stdout] (EJB default - 1) [getFitbitData] executando...
+2022-06-06 12:00:20,759 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Deploying javax.ws.rs.core.Application: class br.com.cpqd.gecro.jaxrs.JaxRsActivator$Proxy$_$$_WeldClientProxy
+2022-06-06 12:00:21,018 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017534: Registered web context: /vida-service
+2022-06-06 12:00:21,048 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "vida-service.ear" (runtime-name : "vida-service.ear")
+2022-06-06 12:00:21,059 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2022-06-06 12:00:21,060 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2022-06-06 12:00:21,060 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.1.Final "Tweek" started in 69078ms - Started 1095 of 1160 services (110 services are lazy, passive or on-demand)
+2022-06-06 12:00:22,190 INFO  [stdout] (EJB default - 1) [getTokenInfo] Path: 1.1/oauth2/introspect
+2022-06-06 12:00:23,195 INFO  [stdout] (EJB default - 1) [postResponse] Response code: 401
+2022-06-06 12:00:23,196 INFO  [stdout] (EJB default - 1) [refreshToken] Path: oauth2/token
+2022-06-06 12:00:23,822 INFO  [stdout] (EJB default - 1) [postResponseWithBasic] Response code: 200
+2022-06-06 12:00:23,879 INFO  [stdout] (EJB default - 1) [refreshToken] newAccessToken: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJINTciLCJzdWIiOiI5SENMR0oiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc2V0IHJhY3QgcmxvYyByd2VpIHJociBybnV0IHJwcm8gcnNsZSIsImV4cCI6MTY1NDU1NjQyMywiaWF0IjoxNjU0NTI3NjIzfQ.bBth1qe_JzUg1gicYTAEP_5ciOEjIIJnyi_ww0GE7lI
+2022-06-06 12:00:23,880 INFO  [stdout] (EJB default - 1) [refreshToken] newRefreshToken: 8376a9dd56e87c61f8dc860343c09df380464f255f7e69be4c681a6dd1421bac
+2022-06-06 12:00:23,881 INFO  [stdout] (EJB default - 1) [refreshToken] expiresIn: 28800
+2022-06-06 12:00:23,881 INFO  [stdout] (EJB default - 1) [refreshToken] scope: weight sleep settings nutrition profile heartrate activity location
+2022-06-06 12:00:23,886 INFO  [stdout] (EJB default - 1) [getFitbitData] accessToken obtido com sucesso: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJINTciLCJzdWIiOiI5SENMR0oiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc2V0IHJhY3QgcmxvYyByd2VpIHJociBybnV0IHJwcm8gcnNsZSIsImV4cCI6MTY1NDU1NjQyMywiaWF0IjoxNjU0NTI3NjIzfQ.bBth1qe_JzUg1gicYTAEP_5ciOEjIIJnyi_ww0GE7lI
+2022-06-06 12:00:24,052 INFO  [stdout] (EJB default - 1) [buscarUltimaMedicaoFC] Exception: No entity found for query
+2022-06-06 12:00:24,053 INFO  [stdout] (EJB default - 1) [getFitbitData] startTime: 11:00
+2022-06-06 12:00:24,054 INFO  [stdout] (EJB default - 1) [getFitbitData] endTime: 12:00
+2022-06-06 12:00:24,058 INFO  [stdout] (EJB default - 1) [getFitbitData] date: 2022-06-06
+2022-06-06 12:00:24,058 INFO  [stdout] (EJB default - 1) [getFitbitData] dateEnd: 2022-06-06
+2022-06-06 12:00:24,059 INFO  [stdout] (EJB default - 1) [getHeartRateData] Path: 1/user/9HCLGJ/activities/heart/date/2022-06-06/2022-06-06/1min/time/11:00/12:00.json
+2022-06-06 12:00:24,548 INFO  [stdout] (EJB default - 1) [getResponse] Response code: 200
+2022-06-06 12:00:24,559 INFO  [stdout] (EJB default - 1) [getTokenInfo] Path: 1.1/oauth2/introspect
+2022-06-06 12:00:24,954 INFO  [stdout] (EJB default - 1) [postResponse] Response code: 401
+2022-06-06 12:00:24,955 INFO  [stdout] (EJB default - 1) [refreshToken] Path: oauth2/token
+2022-06-06 12:00:25,354 INFO  [stdout] (EJB default - 1) [postResponseWithBasic] Response code: 200
+2022-06-06 12:00:25,357 INFO  [stdout] (EJB default - 1) [refreshToken] newAccessToken: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJINTciLCJzdWIiOiI4U1BYSjUiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJudXQgcnBybyByc2xlIiwiZXhwIjoxNjU0NTU2NDI1LCJpYXQiOjE2NTQ1Mjc2MjV9.pQ6mHikAwiqQZG40VcRJ-pweYf29LaM4cZY71uygHxw
+2022-06-06 12:00:25,360 INFO  [stdout] (EJB default - 1) [refreshToken] newRefreshToken: d4aeec63954bbcf7c5e2a5cbf6cd024935de9f7be94de87a2d5d9f16c6e4db6b
+2022-06-06 12:00:25,361 INFO  [stdout] (EJB default - 1) [refreshToken] expiresIn: 28800
+2022-06-06 12:00:25,361 INFO  [stdout] (EJB default - 1) [refreshToken] scope: activity location nutrition sleep social profile settings weight heartrate
+2022-06-06 12:00:25,364 INFO  [stdout] (EJB default - 1) [getFitbitData] accessToken obtido com sucesso: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJINTciLCJzdWIiOiI4U1BYSjUiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJudXQgcnBybyByc2xlIiwiZXhwIjoxNjU0NTU2NDI1LCJpYXQiOjE2NTQ1Mjc2MjV9.pQ6mHikAwiqQZG40VcRJ-pweYf29LaM4cZY71uygHxw
+2022-06-06 12:00:25,530 INFO  [stdout] (EJB default - 1) [getFitbitData] Ultima medida anterior a ontem (1)
+2022-06-06 12:00:25,531 INFO  [stdout] (EJB default - 1) [getFitbitData] (1) lastEndDate millis:1621825200000
+2022-06-06 12:00:25,533 INFO  [stdout] (EJB default - 1) [getFitbitData] (1) ontem millis: 1654398000000
+2022-06-06 12:00:25,534 INFO  [stdout] (EJB default - 1) [getFitbitData] (1) lastEndDate - ontem: -32572800000
+2022-06-06 12:00:25,542 INFO  [stdout] (EJB default - 1) [getFitbitData] startTime: 00:00
+2022-06-06 12:00:25,542 INFO  [stdout] (EJB default - 1) [getFitbitData] endTime: 12:00
+2022-06-06 12:00:25,543 INFO  [stdout] (EJB default - 1) [getFitbitData] date: 2022-06-06
+2022-06-06 12:00:25,545 INFO  [stdout] (EJB default - 1) [getFitbitData] dateEnd: 2022-06-06
+2022-06-06 12:00:25,547 INFO  [stdout] (EJB default - 1) [getHeartRateData] Path: 1/user/8SPXJ5/activities/heart/date/2022-06-06/2022-06-06/1min/time/00:00/12:00.json
+2022-06-06 12:00:25,977 INFO  [stdout] (EJB default - 1) [getResponse] Response code: 200
+2022-06-06 12:00:25,981 INFO  [stdout] (EJB default - 1) [getFitbitData] finalizando... 5529
+2022-06-06 12:00:43,348 INFO  [stdout] (default task-1) [login]
+2022-06-06 12:00:43,349 INFO  [stdout] (default task-1) [login] Usuario: admin
+2022-06-06 12:00:43,367 INFO  [stdout] (default task-1) [login] usuario: admin
+2022-06-06 12:00:44,834 INFO  [stdout] (default task-1) [login] Response: {"success":true,"error":0,"token":"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImF1ZCI6IjEiLCJpYXQiOjE2NTQ1Mjc2NDQsImV4cCI6MTY2MjMwMzY0NCwiaXNzIjoiVklWRVIzNjAiLCJ1c2VyIjotMSwiYWRtaW4iOnRydWUsIm1haWwiOiJhZG1pbiJ9.JxiMAUnvgewXNtRNwpbFq9396Fy-RJ1-t491F6V3iBFhW63YjP4EBzrz-XkzgLZq"}
+2022-06-06 12:15:00,013 INFO  [stdout] (EJB default - 2) [getFitbitData] executando...
+2022-06-06 12:15:01,497 INFO  [stdout] (EJB default - 2) [getTokenInfo] Path: 1.1/oauth2/introspect
+2022-06-06 12:15:02,089 INFO  [stdout] (EJB default - 2) [postResponse] Response code: 200
+2022-06-06 12:15:02,097 INFO  [stdout] (EJB default - 2) [getFitbitData] accessToken obtido com sucesso: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJINTciLCJzdWIiOiI5SENMR0oiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc2V0IHJhY3QgcmxvYyByd2VpIHJociBybnV0IHJwcm8gcnNsZSIsImV4cCI6MTY1NDU1NjQyMywiaWF0IjoxNjU0NTI3NjIzfQ.bBth1qe_JzUg1gicYTAEP_5ciOEjIIJnyi_ww0GE7lI
+2022-06-06 12:15:02,250 INFO  [stdout] (EJB default - 2) [buscarUltimaMedicaoFC] Exception: No entity found for query
+2022-06-06 12:15:02,250 INFO  [stdout] (EJB default - 2) [getFitbitData] startTime: 11:15
+2022-06-06 12:15:02,251 INFO  [stdout] (EJB default - 2) [getFitbitData] endTime: 12:15
+2022-06-06 12:15:02,251 INFO  [stdout] (EJB default - 2) [getFitbitData] date: 2022-06-06
+2022-06-06 12:15:02,251 INFO  [stdout] (EJB default - 2) [getFitbitData] dateEnd: 2022-06-06
+2022-06-06 12:15:02,251 INFO  [stdout] (EJB default - 2) [getHeartRateData] Path: 1/user/9HCLGJ/activities/heart/date/2022-06-06/2022-06-06/1min/time/11:15/12:15.json
+2022-06-06 12:15:02,652 INFO  [stdout] (EJB default - 2) [getResponse] Response code: 200
+2022-06-06 12:15:02,661 INFO  [stdout] (EJB default - 2) [getTokenInfo] Path: 1.1/oauth2/introspect
+2022-06-06 12:15:03,116 INFO  [stdout] (EJB default - 2) [postResponse] Response code: 200
+2022-06-06 12:15:03,119 INFO  [stdout] (EJB default - 2) [getFitbitData] accessToken obtido com sucesso: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJINTciLCJzdWIiOiI4U1BYSjUiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJudXQgcnBybyByc2xlIiwiZXhwIjoxNjU0NTU2NDI1LCJpYXQiOjE2NTQ1Mjc2MjV9.pQ6mHikAwiqQZG40VcRJ-pweYf29LaM4cZY71uygHxw
+2022-06-06 12:15:03,276 INFO  [stdout] (EJB default - 2) [getFitbitData] Ultima medida anterior a ontem (1)
+2022-06-06 12:15:03,276 INFO  [stdout] (EJB default - 2) [getFitbitData] (1) lastEndDate millis:1621825200000
+2022-06-06 12:15:03,278 INFO  [stdout] (EJB default - 2) [getFitbitData] (1) ontem millis: 1654398000000
+2022-06-06 12:15:03,278 INFO  [stdout] (EJB default - 2) [getFitbitData] (1) lastEndDate - ontem: -32572800000
+2022-06-06 12:15:03,279 INFO  [stdout] (EJB default - 2) [getFitbitData] startTime: 00:00
+2022-06-06 12:15:03,279 INFO  [stdout] (EJB default - 2) [getFitbitData] endTime: 12:15
+2022-06-06 12:15:03,280 INFO  [stdout] (EJB default - 2) [getFitbitData] date: 2022-06-06
+2022-06-06 12:15:03,280 INFO  [stdout] (EJB default - 2) [getFitbitData] dateEnd: 2022-06-06
+2022-06-06 12:15:03,281 INFO  [stdout] (EJB default - 2) [getHeartRateData] Path: 1/user/8SPXJ5/activities/heart/date/2022-06-06/2022-06-06/1min/time/00:00/12:15.json
+2022-06-06 12:15:03,679 INFO  [stdout] (EJB default - 2) [getResponse] Response code: 200
+2022-06-06 12:15:03,684 INFO  [stdout] (EJB default - 2) [getFitbitData] finalizando... 3671
+2022-06-06 12:27:09,737 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-16) JBAS017535: Unregistered web context: /vida-service
+2022-06-06 12:27:09,747 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017532: Host default-host stopping
+2022-06-06 12:27:09,752 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-12) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2022-06-06 12:27:09,752 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar#VidaPU'
+2022-06-06 12:27:09,753 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) JBAS010418: Stopped Driver service with driver-name = h2
+2022-06-06 12:27:09,756 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016009: Stopping weld service for deployment vida-service.ear
+2022-06-06 12:27:09,768 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-14) JBAS017521: Undertow HTTP listener default suspending
+2022-06-06 12:27:09,768 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'vida-service.ear/vida-service-ejb-1.0.0-SNAPSHOT.jar#VidaPU'
+2022-06-06 12:27:09,769 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-13) JBAS010409: Unbound data source [java:jboss/datasources/VidaDSdev]
+2022-06-06 12:27:09,772 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-14) JBAS017520: Undertow HTTP listener default stopped, was bound to /0.0.0.0:8080
+2022-06-06 12:27:09,773 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) JBAS010418: Stopped Driver service with driver-name = postgresql
+2022-06-06 12:27:09,773 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015974: Stopped subdeployment (runtime-name: vida-service-ejb-1.0.0-SNAPSHOT.jar) in 44ms
+2022-06-06 12:27:09,774 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-14) JBAS017506: Undertow 1.1.8.Final stopping
+2022-06-06 12:27:09,821 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015974: Stopped subdeployment (runtime-name: vida-service-rest-1.0.0-SNAPSHOT.war) in 95ms
+2022-06-06 12:27:09,872 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment vida-service.ear (runtime-name: vida-service.ear) in 145ms
+2022-06-06 12:27:09,876 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015950: WildFly 8.2.1.Final "Tweek" stopped in 144ms

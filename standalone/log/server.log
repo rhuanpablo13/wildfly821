@@ -1,0 +1,381 @@
+2022-09-16 12:40:48,192 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2022-09-16 12:40:48,201 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2022-09-16 12:40:48,191 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2022-09-16 12:40:48,212 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2022-09-16 12:40:48,222 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2022-09-16 12:40:48,230 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2022-09-16 12:40:48,235 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2022-09-16 12:40:48,250 INFO  [org.jboss.as.naming] (MSC service thread 1-8) JBAS011802: Starting Naming Service
+2022-09-16 12:40:48,251 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-10) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2022-09-16 12:40:48,262 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013170: Current PicketBox version=4.0.21.Final
+2022-09-16 12:40:48,323 INFO  [org.jboss.remoting] (MSC service thread 1-16) JBoss Remoting version 4.0.7.Final
+2022-09-16 12:40:48,470 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2022-09-16 12:40:48,701 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.8.Final starting
+2022-09-16 12:40:48,701 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017502: Undertow 1.1.8.Final starting
+2022-09-16 12:40:48,823 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2022-09-16 12:40:48,825 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-13) JBAS010417: Started Driver service with driver-name = h2
+2022-09-16 12:40:49,030 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010404: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.3)
+2022-09-16 12:40:49,033 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-10) JBAS010417: Started Driver service with driver-name = postgresql
+2022-09-16 12:40:49,360 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.txn.ArjunaObjectStoreEnvironment: org.jboss.msc.service.StartException in service jboss.txn.ArjunaObjectStoreEnvironment: Failed to start service
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1904) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [java.base:]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [java.base:]
+	at java.base/java.lang.Thread.run(Thread.java:834) [java.base:]
+Caused by: java.lang.RuntimeException: java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+	at com.arjuna.common.internal.util.propertyservice.BeanPopulator.getNamedInstance(BeanPopulator.java:81)
+	at com.arjuna.common.internal.util.propertyservice.BeanPopulator.getNamedInstance(BeanPopulator.java:58)
+	at org.jboss.as.txn.service.ArjunaObjectStoreEnvironmentService.start(ArjunaObjectStoreEnvironmentService.java:78)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	... 3 more
+Caused by: java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+	at java.base/jdk.internal.misc.Unsafe.defineClass0(Native Method) [java.base:]
+	at java.base/jdk.internal.misc.Unsafe.defineClass(Unsafe.java:1192) [java.base:]
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:63) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:400) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:394) [java.base:]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:393) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateConstructor(MethodAccessorGenerator.java:92) [java.base:]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:55) [java.base:]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [java.base:]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) [java.base:]
+	at java.base/java.lang.reflect.Proxy.newProxyInstance(Proxy.java:1022) [java.base:]
+	at java.base/java.lang.reflect.Proxy.newProxyInstance(Proxy.java:1008) [java.base:]
+	at java.base/sun.reflect.annotation.AnnotationParser$1.run(AnnotationParser.java:306) [java.base:]
+	at java.base/sun.reflect.annotation.AnnotationParser$1.run(AnnotationParser.java:304) [java.base:]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) [java.base:]
+	at java.base/sun.reflect.annotation.AnnotationParser.annotationForMap(AnnotationParser.java:304) [java.base:]
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:294) [java.base:]
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121) [java.base:]
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73) [java.base:]
+	at java.base/java.lang.reflect.Field.declaredAnnotations(Field.java:1175) [java.base:]
+	at java.base/java.lang.reflect.Field.declaredAnnotations(Field.java:1173) [java.base:]
+	at java.base/java.lang.reflect.Field.getAnnotation(Field.java:1142) [java.base:]
+	at java.base/java.lang.reflect.AnnotatedElement.isAnnotationPresent(AnnotatedElement.java:274) [java.base:]
+	at java.base/java.lang.reflect.AccessibleObject.isAnnotationPresent(AccessibleObject.java:517) [java.base:]
+	at com.arjuna.common.internal.util.propertyservice.BeanPopulator.configureFromProperties(BeanPopulator.java:160)
+	at com.arjuna.common.internal.util.propertyservice.BeanPopulator.getNamedInstance(BeanPopulator.java:78)
+	... 7 more
+Caused by: java.lang.ClassNotFoundException: jdk.internal.reflect.ConstructorAccessorImpl from [Module "org.jboss.jts:main" from local module loader @50a638b5 (finder: local module finder @1817d444 (roots: G:\cpqd\vida-service-container\wildfly-8.2.1.Final\modules,G:\cpqd\vida-service-container\wildfly-8.2.1.Final\modules\system\layers\base))]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:213) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	... 34 more
+
+2022-09-16 12:40:49,459 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path G:\cpqd\vida-service-container\wildfly-8.2.1.Final/welcome-content
+2022-09-16 12:40:49,515 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\ForumIot\images\
+2022-09-16 12:40:49,515 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017525: Started server default-server.
+2022-09-16 12:40:49,547 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017531: Host default-host starting
+2022-09-16 12:40:49,555 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 47) JBAS014612: Operation ("add") failed - address: ([("subsystem" => "undertow")]): javax.xml.stream.FactoryConfigurationError: Provider __redirected.__XMLInputFactory could not be instantiated: java.lang.reflect.InvocationTargetException
+	at java.xml/javax.xml.stream.FactoryFinder.newInstance(FactoryFinder.java:200) [java.xml:]
+	at java.xml/javax.xml.stream.FactoryFinder.newInstance(FactoryFinder.java:148) [java.xml:]
+	at java.xml/javax.xml.stream.FactoryFinder.find(FactoryFinder.java:260) [java.xml:]
+	at java.xml/javax.xml.stream.FactoryFinder.find(FactoryFinder.java:222) [java.xml:]
+	at java.xml/javax.xml.stream.XMLInputFactory.newInstance(XMLInputFactory.java:161) [java.xml:]
+	at org.jboss.as.web.common.SharedTldsMetaDataBuilder.parseTLD(SharedTldsMetaDataBuilder.java:98)
+	at org.jboss.as.web.common.SharedTldsMetaDataBuilder.init(SharedTldsMetaDataBuilder.java:72)
+	at org.jboss.as.web.common.SharedTldsMetaDataBuilder.<init>(SharedTldsMetaDataBuilder.java:63)
+	at org.wildfly.extension.undertow.UndertowSubsystemAdd$1.execute(UndertowSubsystemAdd.java:121)
+	at org.jboss.as.server.AbstractDeploymentChainStep.execute(AbstractDeploymentChainStep.java:50)
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.controller.ParallelBootOperationStepHandler$ParallelBootTask.run(ParallelBootOperationStepHandler.java:354) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [java.base:]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [java.base:]
+	at java.base/java.lang.Thread.run(Thread.java:834) [java.base:]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [java.base:]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [java.base:]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [java.base:]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) [java.base:]
+	at java.xml/javax.xml.stream.FactoryFinder.newInstance(FactoryFinder.java:189) [java.xml:]
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+	at java.base/jdk.internal.misc.Unsafe.defineClass0(Native Method) [java.base:]
+	at java.base/jdk.internal.misc.Unsafe.defineClass(Unsafe.java:1192) [java.base:]
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:63) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:400) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:394) [java.base:]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:393) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateConstructor(MethodAccessorGenerator.java:92) [java.base:]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:55) [java.base:]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [java.base:]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) [java.base:]
+	at __redirected.__XMLInputFactory.<init>(__XMLInputFactory.java:115) [jboss-modules.jar:1.3.3.Final]
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: jdk.internal.reflect.ConstructorAccessorImpl from [Module "org.codehaus.woodstox:main" from local module loader @50a638b5 (finder: local module finder @1817d444 (roots: G:\cpqd\vida-service-container\wildfly-8.2.1.Final\modules,G:\cpqd\vida-service-container\wildfly-8.2.1.Final\modules\system\layers\base))]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:213) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	... 35 more
+
+2022-09-16 12:40:49,566 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017532: Host default-host stopping
+2022-09-16 12:40:49,594 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-15) JBAS017519: Undertow HTTP listener default listening on /0.0.0.0:8080
+2022-09-16 12:40:49,596 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-12) JBAS017521: Undertow HTTP listener default suspending
+2022-09-16 12:40:49,600 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-12) JBAS017520: Undertow HTTP listener default stopped, was bound to /0.0.0.0:8080
+2022-09-16 12:40:49,602 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-16) JBAS017506: Undertow 1.1.8.Final stopping
+2022-09-16 12:40:49,639 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 48) JBAS014612: Operation ("add") failed - address: ([("subsystem" => "webservices")]): javax.xml.stream.FactoryConfigurationError: Provider __redirected.__XMLInputFactory could not be instantiated: java.lang.reflect.InvocationTargetException
+	at java.xml/javax.xml.stream.FactoryFinder.newInstance(FactoryFinder.java:200) [java.xml:]
+	at java.xml/javax.xml.stream.FactoryFinder.newInstance(FactoryFinder.java:148) [java.xml:]
+	at java.xml/javax.xml.stream.FactoryFinder.find(FactoryFinder.java:260) [java.xml:]
+	at java.xml/javax.xml.stream.FactoryFinder.find(FactoryFinder.java:222) [java.xml:]
+	at java.xml/javax.xml.stream.XMLInputFactory.newInstance(XMLInputFactory.java:161) [java.xml:]
+	at org.jboss.wsf.spi.util.StAXUtils.createXMLInputFactory(StAXUtils.java:72)
+	at org.jboss.wsf.spi.util.StAXUtils.getXMLInputFactory(StAXUtils.java:93)
+	at org.jboss.wsf.spi.util.StAXUtils.createXMLStreamReader(StAXUtils.java:105)
+	at org.jboss.as.webservices.parser.WSDeploymentAspectParser.parse(WSDeploymentAspectParser.java:72)
+	at org.jboss.as.webservices.deployers.deployment.DeploymentAspectsProvider.getDeploymentAspects(DeploymentAspectsProvider.java:70)
+	at org.jboss.as.webservices.deployers.deployment.DeploymentAspectsProvider.getSortedDeploymentAspects(DeploymentAspectsProvider.java:54)
+	at org.jboss.as.webservices.dmr.WSDeploymentActivator.addDeploymentProcessors(WSDeploymentActivator.java:81)
+	at org.jboss.as.webservices.dmr.WSDeploymentActivator.activate(WSDeploymentActivator.java:75)
+	at org.jboss.as.webservices.dmr.WSSubsystemAdd$1.execute(WSSubsystemAdd.java:81)
+	at org.jboss.as.server.AbstractDeploymentChainStep.execute(AbstractDeploymentChainStep.java:50)
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:660) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.as.controller.ParallelBootOperationStepHandler$ParallelBootTask.run(ParallelBootOperationStepHandler.java:354) [wildfly-controller-8.2.1.Final.jar:8.2.1.Final]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [java.base:]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [java.base:]
+	at java.base/java.lang.Thread.run(Thread.java:834) [java.base:]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedConstructorAccessor3.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [java.base:]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) [java.base:]
+	at java.xml/javax.xml.stream.FactoryFinder.newInstance(FactoryFinder.java:189) [java.xml:]
+	... 23 more
+Caused by: java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+	at java.base/jdk.internal.misc.Unsafe.defineClass0(Native Method) [java.base:]
+	at java.base/jdk.internal.misc.Unsafe.defineClass(Unsafe.java:1192) [java.base:]
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:63) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:400) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:394) [java.base:]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:393) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateConstructor(MethodAccessorGenerator.java:92) [java.base:]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:55) [java.base:]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [java.base:]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) [java.base:]
+	at __redirected.__XMLInputFactory.<init>(__XMLInputFactory.java:115) [jboss-modules.jar:1.3.3.Final]
+	... 27 more
+Caused by: java.lang.ClassNotFoundException: jdk.internal.reflect.ConstructorAccessorImpl from [Module "org.codehaus.woodstox:main" from local module loader @50a638b5 (finder: local module finder @1817d444 (roots: G:\cpqd\vida-service-container\wildfly-8.2.1.Final\modules,G:\cpqd\vida-service-container\wildfly-8.2.1.Final\modules\system\layers\base))]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:213) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	... 39 more
+
+2022-09-16 12:40:49,642 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) "JBAS014784: Failed executing subsystem undertow boot operations"
+2022-09-16 12:40:49,643 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) "JBAS014784: Failed executing subsystem webservices boot operations"
+2022-09-16 12:40:49,644 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("parallel-subsystem-boot") failed - address: ([]) - failure description: "\"JBAS014784: Failed executing subsystem undertow boot operations\""
+2022-09-16 12:40:49,678 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-15) JBAS015012: Started FileSystemDeploymentService for directory G:\cpqd\vida-service-container\wildfly-8.2.1.Final\standalone\deployments
+2022-09-16 12:40:49,759 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "vida-service.ear" (runtime-name: "vida-service.ear")
+2022-09-16 12:40:49,776 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.unit."vida-service.ear".STRUCTURE: org.jboss.msc.service.StartException in service jboss.deployment.unit."vida-service.ear".STRUCTURE: JBAS018733: Failed to process phase STRUCTURE of deployment "vida-service.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.2.1.Final.jar:8.2.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [java.base:]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [java.base:]
+	at java.base/java.lang.Thread.run(Thread.java:834) [java.base:]
+Caused by: javax.xml.stream.FactoryConfigurationError: Provider __redirected.__XMLInputFactory could not be instantiated: java.lang.reflect.InvocationTargetException
+	at java.xml/javax.xml.stream.FactoryFinder.newInstance(FactoryFinder.java:200) [java.xml:]
+	at java.xml/javax.xml.stream.FactoryFinder.newInstance(FactoryFinder.java:148) [java.xml:]
+	at java.xml/javax.xml.stream.FactoryFinder.find(FactoryFinder.java:260) [java.xml:]
+	at java.xml/javax.xml.stream.FactoryFinder.find(FactoryFinder.java:222) [java.xml:]
+	at java.xml/javax.xml.stream.XMLInputFactory.newInstance(XMLInputFactory.java:161) [java.xml:]
+	at org.jboss.as.ee.structure.EarMetaDataParsingProcessor.handleSpecMetadata(EarMetaDataParsingProcessor.java:99)
+	at org.jboss.as.ee.structure.EarMetaDataParsingProcessor.deploy(EarMetaDataParsingProcessor.java:66)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.1.Final.jar:8.2.1.Final]
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedConstructorAccessor3.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [java.base:]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) [java.base:]
+	at java.xml/javax.xml.stream.FactoryFinder.newInstance(FactoryFinder.java:189) [java.xml:]
+	... 12 more
+Caused by: java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+	at java.base/jdk.internal.misc.Unsafe.defineClass0(Native Method) [java.base:]
+	at java.base/jdk.internal.misc.Unsafe.defineClass(Unsafe.java:1192) [java.base:]
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:63) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:400) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:394) [java.base:]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:393) [java.base:]
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateConstructor(MethodAccessorGenerator.java:92) [java.base:]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:55) [java.base:]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [java.base:]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) [java.base:]
+	at __redirected.__XMLInputFactory.<init>(__XMLInputFactory.java:115) [jboss-modules.jar:1.3.3.Final]
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: jdk.internal.reflect.ConstructorAccessorImpl from [Module "org.codehaus.woodstox:main" from local module loader @50a638b5 (finder: local module finder @1817d444 (roots: G:\cpqd\vida-service-container\wildfly-8.2.1.Final\modules,G:\cpqd\vida-service-container\wildfly-8.2.1.Final\modules\system\layers\base))]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:213) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	... 28 more
+
+2022-09-16 12:40:49,821 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "vida-service.ear")]) - failure description: {"JBAS014671: Failed services" => {"jboss.deployment.unit.\"vida-service.ear\".STRUCTURE" => "org.jboss.msc.service.StartException in service jboss.deployment.unit.\"vida-service.ear\".STRUCTURE: JBAS018733: Failed to process phase STRUCTURE of deployment \"vida-service.ear\"
+    Caused by: javax.xml.stream.FactoryConfigurationError: Provider __redirected.__XMLInputFactory could not be instantiated: java.lang.reflect.InvocationTargetException
+    Caused by: java.lang.reflect.InvocationTargetException
+    Caused by: java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+    Caused by: java.lang.ClassNotFoundException: jdk.internal.reflect.ConstructorAccessorImpl from [Module \"org.codehaus.woodstox:main\" from local module loader @50a638b5 (finder: local module finder @1817d444 (roots: G:\\cpqd\\vida-service-container\\wildfly-8.2.1.Final\\modules,G:\\cpqd\\vida-service-container\\wildfly-8.2.1.Final\\modules\\system\\layers\\base))]"}}
+2022-09-16 12:40:49,822 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "ee"),
+    ("context-service" => "default")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => [
+        "jboss.concurrent.ee.context.service.default",
+        "jboss.concurrent.ee.tsp"
+    ],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,823 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "ee"),
+    ("managed-thread-factory" => "default")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.concurrent.ee.threadfactory.default"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,823 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "ee"),
+    ("managed-executor-service" => "default")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.concurrent.ee.executor.default"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,823 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "ee"),
+    ("managed-scheduled-executor-service" => "default")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.concurrent.ee.scheduledexecutor.default"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,824 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "jpa")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.jpa"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,824 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "ExampleDS")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.data-source.java:jboss/datasources/ExampleDS"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,825 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "VidaDSdev")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.data-source.java:jboss/datasources/VidaDSdev"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,825 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "jca")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => [
+        "jboss.connector.transactionintegration",
+        "jboss.rarepository"
+    ],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,826 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "jca"),
+    ("bootstrap-context" => "default")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.connector.bootstrapcontext.default"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,826 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "jca"),
+    ("cached-connection-manager" => "cached-connection-manager")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.cached-connection-manager"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,826 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "webservices")]) - failure description: "JBAS014749: Operation handler failed: Provider __redirected.__XMLInputFactory could not be instantiated: java.lang.reflect.InvocationTargetException"
+2022-09-16 12:40:49,827 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "ExampleDS")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => [
+        "jboss.data-source.java:jboss/datasources/ExampleDS",
+        "jboss.data-source.reference-factory.ExampleDS",
+        "jboss.naming.context.java.jboss.datasources.ExampleDS"
+    ],
+    "Services that may be the cause:" => [
+        "jboss.remoting.remotingConnectorInfoService.http-remoting-connector",
+        "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+    ]
+}}
+2022-09-16 12:40:49,827 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "VidaDSdev")
+]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => [
+        "jboss.data-source.java:jboss/datasources/VidaDSdev",
+        "jboss.data-source.reference-factory.VidaDSdev",
+        "jboss.naming.context.java.jboss.datasources.VidaDSdev"
+    ],
+    "Services that may be the cause:" => [
+        "jboss.remoting.remotingConnectorInfoService.http-remoting-connector",
+        "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+    ]
+}}
+2022-09-16 12:40:49,827 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "undertow")]) - failure description: "JBAS014749: Operation handler failed: Provider __redirected.__XMLInputFactory could not be instantiated: java.lang.reflect.InvocationTargetException"
+2022-09-16 12:40:49,828 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "transactions")]) - failure description: {
+    "JBAS014671: Failed services" => {"jboss.txn.ArjunaObjectStoreEnvironment" => "org.jboss.msc.service.StartException in service jboss.txn.ArjunaObjectStoreEnvironment: Failed to start service
+    Caused by: java.lang.RuntimeException: java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+    Caused by: java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+    Caused by: java.lang.ClassNotFoundException: jdk.internal.reflect.ConstructorAccessorImpl from [Module \"org.jboss.jts:main\" from local module loader @50a638b5 (finder: local module finder @1817d444 (roots: G:\\cpqd\\vida-service-container\\wildfly-8.2.1.Final\\modules,G:\\cpqd\\vida-service-container\\wildfly-8.2.1.Final\\modules\\system\\layers\\base))]"},
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.naming.context.java.TransactionManager",
+            "jboss.naming.context.java.jboss.TransactionManager",
+            "jboss.naming.context.java.jboss.TransactionSynchronizationRegistry",
+            "jboss.naming.context.java.jboss.UserTransaction",
+            "jboss.txn.ArjunaRecoveryManager",
+            "jboss.txn.ArjunaTransactionManager",
+            "jboss.txn.TransactionManager",
+            "jboss.txn.TransactionSynchronizationRegistry",
+            "jboss.txn.UserTransaction"
+        ],
+        "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+    }
+}
+2022-09-16 12:40:49,829 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "ejb3")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.ejb.utilities"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2022-09-16 12:40:49,829 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "ejb3"),
+    ("service" => "remote")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => ["jboss.ejb3.connector is missing [jboss.remoting.remotingConnectorInfoService.http-remoting-connector]"]}
+2022-09-16 12:40:49,858 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "vida-service.ear" (runtime-name : "vida-service.ear")
+2022-09-16 12:40:49,858 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.remoting.remotingConnectorInfoService.http-remoting-connector (missing) dependents: [service jboss.ejb3.connector] 
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."vida-service.ear".STRUCTURE: org.jboss.msc.service.StartException in service jboss.deployment.unit."vida-service.ear".STRUCTURE: JBAS018733: Failed to process phase STRUCTURE of deployment "vida-service.ear"
+      service jboss.txn.ArjunaObjectStoreEnvironment: org.jboss.msc.service.StartException in service jboss.txn.ArjunaObjectStoreEnvironment: Failed to start service
+
+2022-09-16 12:40:49,951 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2022-09-16 12:40:49,952 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2022-09-16 12:40:49,953 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.1.Final "Tweek" started (with errors) in 15325ms - Started 131 of 213 services (32 services failed or missing dependencies, 70 services are lazy, passive or on-demand)
+2022-09-16 12:40:50,091 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment vida-service.ear (runtime-name: vida-service.ear) in 0ms
+2022-09-16 12:40:50,198 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "vida-service.ear" (runtime-name: "vida-service.ear")
+2022-09-16 12:40:50,198 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."vida-service.ear".STRUCTURE
+      service jboss.txn.ArjunaObjectStoreEnvironment: org.jboss.msc.service.StartException in service jboss.txn.ArjunaObjectStoreEnvironment: Failed to start service
+
+2022-09-16 12:40:54,888 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015003: Found vida-service.ear in deployment directory. To trigger deployment create a file called vida-service.ear.dodeploy
+2022-09-16 14:38:06,907 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010418: Stopped Driver service with driver-name = h2
+2022-09-16 14:38:06,907 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-10) JBAS010418: Stopped Driver service with driver-name = postgresql
+2022-09-16 14:38:06,961 INFO  [org.jboss.as] (MSC service thread 1-11) JBAS015950: WildFly 8.2.1.Final "Tweek" stopped in 65ms
