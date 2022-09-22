@@ -146,12 +146,12 @@
                         <password>sa</password>
                     </security>
                 </datasource>
-                <datasource jndi-name="java:jboss/datasources/VidaDSdev" pool-name="VidaDSdev" enabled="true" use-java-context="true">
-                    <connection-url>jdbc:postgresql://10.233.48.2:5433/vida_demo</connection-url>
+                <datasource jndi-name="java:jboss/datasources/VidaAdtDSdev" pool-name="VidaAdtDSdev" enabled="true" use-java-context="true">
+                    <connection-url>jdbc:postgresql://10.233.48.145:30051/vida_adt_des</connection-url>
                     <driver>postgresql</driver>
                     <security>
-                        <user-name>vida_demo_app</user-name>
-                        <password>vida_demo_app</password>
+                        <user-name>vida_adt_des_app</user-name>
+                        <password>vida_adt_des_app</password>
                     </security>
                 </datasource>
                 <drivers>
